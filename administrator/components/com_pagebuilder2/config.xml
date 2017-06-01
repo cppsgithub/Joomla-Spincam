@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<section name="configuration" label="JSN_EXTFW_CONFIG_CONFIGURATION">
+		<group name="configs" label="JSN_EXTFW_CONFIG_GLOBAL_PARAMETERS" icon="cog">
+			<tab name="global-parameter-general" label="JSN_EXTFW_CONFIG_GENERAL">
+				<fieldset name="general">
+					<field
+						name="review_popup" type="jsnradio" default="1" filter="int"
+						label="JSN_EXTFW_CONFIG_REVIEW_POPUP_LABEL" description="JSN_EXTFW_CONFIG_REVIEW_POPUP_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+					</field>
+
+					<field
+						name="disable_all_messages" type="jsnradio" default="0" filter="int"
+						label="JSN_PAGEBUILDER2_DISABLE_ALL_MESSAGES_LABEL" description="JSN_PAGEBUILDER2_DISABLE_ALL_MESSAGES_DESC"
+					>
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</field>
+
+					<action label="JAPPLY" task="configuration.save" track="1" ajax="1" />
+				</fieldset>
+			</tab>
+		</group>
+
+		<group name="msgs" label="JSN_EXTFW_CONFIG_MESSAGES" icon="comment">
+			<fieldset name="messagelist">
+				<field name="messagelist" type="messagelist">
+					<option value="ITEMS">JSN_EXTFW_CONFIG_ITEMS_SCREEN</option>
+					<option value="CONFIGURATION">JSN_EXTFW_CONFIG_CONFIGURATION_SCREEN</option>
+					<option value="ABOUT">JSN_EXTFW_CONFIG_ABOUT_SCREEN</option>
+				</field>
+
+				<action label="JAPPLY" task="configuration.save" />
+			</fieldset>
+		</group>
+
+		<group name="langs" label="JSN_EXTFW_CONFIG_LANGUAGES" icon="globe">
+			<fieldset name="languagemanager">
+				<field name="languagemanager" type="languagemanager" />
+
+				<action label="JAPPLY" task="configuration.save" />
+			</fieldset>
+		</group>
+	</section>
+
+	<section name="maintenance" label="JSN_EXTFW_CONFIG_MAINTENANCE">
+		<group name="permissions" label="JSN_EXTFW_CONFIG_PERMISSIONS" icon="lock">
+			<fieldset name="permissions">
+				<field
+					name="permissions" type="permissions" class="inputbox" filter="rules" validate="rules"
+					component="com_pagebuilder2" section="component"
+				/>
+
+				<action label="JAPPLY" task="configuration.save" />
+			</fieldset>
+		</group>
+	</section>
+</config>

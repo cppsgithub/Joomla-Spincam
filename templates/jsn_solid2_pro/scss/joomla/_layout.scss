@@ -1,0 +1,284 @@
+// ======================================
+// ------------ GENARAL -----------------
+// ======================================
+
+$page-border: none !default;
+
+$page-box-shadow: none !default;
+
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+#{$brand-prefix}content {
+	height: 100%;
+	@include transition(all .3s);
+}
+.content-center {
+	text-align: center;
+	em {
+		margin-bottom: 20px;
+		display: block;
+		margin-top: 8px;
+	}
+}
+div a.btn + a.btn {
+    margin-left: 10px;
+}
+.sunfw-pos-slider {
+	background: #ffffff;
+	border-bottom: 2px solid #d8d8d8;
+	position: relative;
+	z-index: 1;
+}
+.item-page {
+	background: #fff;
+	padding: 15px 20px 10px;
+}
+.sunfw-pos-mainbody-bottom {
+	background: #fff;
+	padding: 0 20px;
+	.jsn-gallery {
+		margin-right: -10px;
+		margin-left: -10px;
+	}
+}
+.sunfw-pos-right, .sunfw-pos-left {
+	background: #fff;
+	padding: 7px 9px 10px;
+	.module-style {
+		margin-bottom: 15px;
+	}
+}
+
+.footer {
+	.module-title {
+		padding-bottom: 10px;
+		border-bottom: 2px solid #363636;
+		margin-bottom: 20px;
+		&:first-letter {
+		    color: $primary-color;
+		}
+	}
+}
+
+/* ========================= JOOMLA! 3.x CORE LAYOUT ======================= */
+/* ---------- Article Category Blog,Single Article ----------- */
+.page-header {
+	margin: 0;
+	border-bottom: none;
+	h2 {
+		margin: 0;
+		font-size: 19px !important;
+		color: $primary-color !important;
+		text-transform: capitalize !important;
+		font-weight: bold;
+	}
+}
+.jsn-article-toolbar {
+	background-color: #f4f4f4;
+	padding: 0 5px;
+	.article-info {
+		margin: 0 0 15px;
+		padding: 9px 0;
+		dd {
+			display: inline-block;
+			padding: 0 5px;
+			line-height: 22px;
+			&:first-child {
+				@include rtl-padding-right(0);
+			}
+		}
+		.create {
+			i {
+				line-height: 15px;
+			}
+		}
+	}
+	.icons .btn-group {
+		padding: 9px 0;
+		a.dropdown-toggle {
+			padding: 0;
+			span.caret{
+				@include rtl-margin-left(3px);
+			}
+		}
+		&.open a.dropdown-toggle{
+			box-shadow: none;
+		}
+	}
+}
+
+/* ---------- Article Category List ----------- */
+.content-category {
+	.cat-children {
+		padding-top: 10px;
+		h3.page-header {
+			margin: 10px 0;
+			font-size: 18px;
+		}
+	}
+}
+.layout-item {
+	.blog {
+		.page-header {
+			h1, h2 {
+				margin-bottom: 0;
+			}
+		}
+		.article-info {
+			margin-bottom: 3px;
+		}
+	}
+	.content-category {
+		.cat-children {
+			h3.page-header {
+				font-size: 15px;
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+}
+.blog-featured {
+	h2 {
+		margin-bottom: 5px;
+	}
+	.article-info {
+		margin-bottom: 5px;
+	}
+}
+.pagination {
+	margin: 0 !important;
+	.counter {
+		display: none;
+	}
+}
+/* ---------- Search Page ----------- */
+form#searchForm{
+	border: 1px solid #ecf0f3;
+	padding: 15px;
+	background: #fff;
+	.btn-toolbar{
+		background: #ecf0f3 none repeat scroll 0 0;
+		padding: 15px;
+		.btn {
+			margin-top: 0;
+    		padding: 8px 12px;
+		}
+	}
+	#search-searchword {
+		height: 35px;
+	}
+	.searchintro {
+		margin: 10px 0
+	}
+	fieldset{
+		margin-top:15px;
+		legend{
+			padding-bottom: 8px;
+			margin-bottom: 10px;
+		}
+		label input{
+			display: inline-block;
+			position: inherit;
+			margin: 0 3px 0;
+			vertical-align: middle;
+		}
+	}
+	p.counter{ padding: 10px 0;}
+}
+dl.search-results{
+	margin: 10px 0;
+	padding: 0 15px;
+	dt.result-title{
+		padding-top: 5px;
+	}
+}
+.chzn-container {
+	min-width: 100px !important;
+}
+.chzn-container-single .chzn-single span{
+	@include rtl-margin-right(0);
+}
+/* ---------- Newfeed ----------- */
+.newsfeed-category {
+	background: #fff;
+	padding: 15px;
+	h1 {
+		margin-top: 0;
+	}
+}
+	#adminForm fieldset.filters label.filter-search-lbl span{
+		@include rtl-margin-right(10px);
+	}
+	ul.list-striped{
+		padding: 10px 0;
+		list-style-type: none;
+		li, dd{
+			border-bottom: 1px solid #ddd;
+			padding: 8px;
+			&:nth-child(2n+1){
+				background-color: #f9f9f9;
+			}
+			&:hover{
+				background-color: #f5f5f5;
+			}
+			div.list-title a{
+				font-weight: bold;
+			}
+		}
+	}
+	.newsfeed figure{
+		padding: 10px 0;
+	}
+/* ---------- Sticky ----------- */
+.sunfw-sticky.sunfw-sticky-open {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	right: 0;
+	z-index: 99;
+}
+//Kunnena 
+#kunena {
+	background: #fff;
+	padding: 15px;
+}
+// Blog 
+.blog {
+	background: #fff;
+	padding: 15px;
+	> h2 {
+		margin-top: 0 !important;
+	}
+}
+// Category List
+.category-list {
+	background: #fff;
+	padding: 15px;
+	.content-category {
+		> h2 {
+			margin-top: 0;
+		}
+		
+	}
+}
+
+.sunfw-com-kunena {
+	#sunfw_section_compoment {
+		.layout-item {
+			background: #fff;
+			padding-bottom: 10px;
+		}
+	}
+}

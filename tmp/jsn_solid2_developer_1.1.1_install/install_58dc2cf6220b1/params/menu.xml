@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params" addfieldpath="/plugins/system/sunfw/includes/admin/fields">
+	<fieldset name="sunfwmenu" label="SUNFW_MENU_OPTIONS">		
+		<field name="sunfw-link-icon" type="sunfwlinkicon" label="SUNFW_MENU_LINK_ICON" description="SUNFW_MENU_LINK_ICON_DESC" />
+		<field name="sunfw-link-description" cols="40" rows="3" type="textarea" class="input-large" label="SUNFW_MENU_LINK_DESCRIPTION" description="SUNFW_MENU_LINK_DESCRIPTION_DESC" />
+    </fieldset>
+	</fields>
+</form>

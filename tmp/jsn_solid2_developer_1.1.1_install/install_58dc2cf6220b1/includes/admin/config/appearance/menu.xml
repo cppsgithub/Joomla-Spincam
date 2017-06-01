@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="sunfw-appearance">
+		<fieldset name="parentmenu" label="SUNFW_APPEARANCE_PARENT_MENU">
+			<field name="menu-parentmenu-font-size" suffix="px" max-range="69" min-range="6" class="form-control sunfwslider" type="sunfwslider" default="14" label="SUNFW_APPEARANCE_BUTTON_FONT_SIZE"/>
+			<field name="menu-parentmenu-line-height" suffix="em" max-range="5" min-range="0" class="form-control sunfwslider" type="sunfwslider" default="1.4" step="0.01" label="SUNFW_APPEARANCE_LINE_HEIGHT" />				
+			<field name="menu-parentmenu-link-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="rgb" default="" label="SUNFW_APPEARANCE_LINK_COLOR" />
+			<field name="menu-parentmenu-link-hover-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="rgb" default="" label="SUNFW_APPEARANCE_LINK_COLOR_HOVER"/>
+			<field name="menu-parentmenu-bg" class="form-control sunfwcolorpicker" default="" data-color-type="rgb" type="sunfwcolorpicker" label="SUNFW_APPEARANCE_BACKGROUND" />
+			<field name="menu-parentmenu-bg-hover" class="form-control sunfwcolorpicker" default="" data-color-type="rgb" type="sunfwcolorpicker" label="SUNFW_APPEARANCE_BACKGROUND_LINK_HOVER" />
+		</fieldset>
+	
+		<fieldset name="submenu" label="SUNFW_APPEARANCE_SUB_MENU">
+			<field name="menu-submenu-submenu-font-size" suffix="px" max-range="69" min-range="6" class="form-control sunfwslider" type="sunfwslider" default="12" label="SUNFW_APPEARANCE_BUTTON_FONT_SIZE"/>
+			<field name="menu-submenu-submenu-link-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="rgb" default="" label="SUNFW_APPEARANCE_LINK_COLOR" />
+			<field name="menu-submenu-submenu-link-hover-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="rgb" default="" label="SUNFW_APPEARANCE_LINK_COLOR_HOVER"/>
+			<field name="menu-submenu-submenu-bg" class="form-control sunfwcolorpicker" default="" data-color-type="rgb" type="sunfwcolorpicker" label="SUNFW_APPEARANCE_BACKGROUND" />
+		</fieldset>
+	</fields>
+</form>

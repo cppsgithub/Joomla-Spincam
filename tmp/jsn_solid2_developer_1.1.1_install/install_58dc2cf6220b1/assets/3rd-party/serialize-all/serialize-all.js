@@ -1,0 +1,1 @@
+!function(a){a.fn.sunFwSerializeAll=function(){var b=a(this).attr("id"),c=a("#"+b+" :input").serializeArray();return a(":disabled[name]",this).each(function(){c.push({name:this.name,value:a(this).val()})}),c}}(jQuery);

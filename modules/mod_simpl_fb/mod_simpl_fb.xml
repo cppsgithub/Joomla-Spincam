@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+   type="module"
+   version="3.6"
+   client="site"
+   method="upgrade">
+   <name>mod_simpl_fb</name>
+   <author>Brian Coale</author>
+   <creationDate>November 29, 2016</creationDate>
+   <copyright>Copyright (C) 2012-2016 Brian Coale. All rights reserved.</copyright>
+   <license>GNU General Public License version 3 or later; see license.txt</license>
+   <authorEmail>brian@briancoale.com</authorEmail>
+   <authorUrl>www.briancoale.com</authorUrl>
+   <version>2.0.5</version>
+   <description>MOD_SIMPL_FB_DESCRIPTION</description>
+   <files>
+      <folder>images</folder>      
+	  <folder>language</folder>
+	  <folder>plugins</folder>
+	  <folder>tmpl</folder>
+      <filename>helper.php</filename>
+      <filename>index.html</filename>
+	  <filename module="mod_simpl_fb">mod_simpl_fb.php</filename>
+      <filename>mod_simpl_fb.xml</filename>      
+   </files>
+   <config>
+   <fields name="params">
+    <fieldset name="basic">
+     <field
+      name="type"
+      type="list"
+	  validate="options"
+      default="MOD_SIMPL_FB_LIKE_BTN"
+      label="MOD_SIMPL_FB_TYPE_LABEL"
+      description="MOD_SIMPL_FB_TYPE_DESC">
+	   <option value="a.like_btn">MOD_SIMPL_FB_LIKE_BTN
+       </option>	   
+	   <option value="a.send_btn">MOD_SIMPL_FB_SEND_BTN
+       </option>
+	   <option value="a.subscribe_btn">MOD_SIMPL_FB_SUBSCRIBE_BTN
+       </option>
+	   <option value="a.pages">MOD_SIMPL_FB_PAGES
+       </option>
+	   <option value="a.comments">MOD_SIMPL_FB_COMMENTS
+       </option>
+	   <option value="a.follow_btn">MOD_SIMPL_FB_FOLLOW_BTN
+       </option>
+     </field>
+	 <field
+      name="color_scheme"
+      type="list"
+	  validate="options"
+      default="MOD_SIMPL_FB_COLOR_LIGHT"
+      label="MOD_SIMPL_FB_COLOR"
+      description="MOD_SIMPL_FB_COLOR_DESC">
+	  <option value="a.light">MOD_SIMPL_FB_COLOR_LIGHT
+       </option>
+	   <option value="a.dark">MOD_SIMPL_FB_COLOR_DARK
+       </option>
+     </field>
+	 <field
+      name="fb_faces"
+      type="radio"
+	  class="btn-group"
+	  validate="options"
+	  default="0"
+	  label="MOD_SIMPL_FB_FACES"
+	  description="MOD_SIMPL_FB_FACES_DESC"
+	  labelclass="control-label">	  
+	  <option value="0">JOFF
+	  </option>
+	  <option value="1">JON
+	  </option>
+     </field>	 
+	 <field
+      name="fb_rspsv"
+      type="radio"
+	  class="btn-group"
+	  validate="options"
+	  default="0"
+	  label="MOD_SIMPL_FB_RSPSV"
+	  description="MOD_SIMPL_FB_RSPSV_DESC">
+	  <option value="0">JOFF
+	  </option>
+	  <option value="1">JON
+	  </option>
+     </field>
+	 <field
+      name="fb_url"
+      type="text"
+	  default=""
+      label="MOD_SIMPL_FB_FB_URL"
+      description="MOD_SIMPL_FB_FB_URL_DESC">
+     </field>
+	 <field
+      name="width"
+      type="text"
+	  validate=""
+      default=""
+      label="MOD_SIMPL_FB_WIDTH"
+      description="MOD_SIMPL_FB_WIDTH_DESC">
+     </field>
+	 <field
+      name="height"
+      type="text"
+	  validate=""
+      default=""
+      label="MOD_SIMPL_FB_HEIGHT"
+      description="MOD_SIMPL_FB_HEIGHT_DESC">
+     </field>
+	 <field
+      name="fb_border_on"
+      type="radio"
+	  class="btn-group"
+	  validate="options"
+	  default="0"
+      label="MOD_SIMPL_FB_BORDER_ON_LABEL"
+      description="MOD_SIMPL_FB_BORDER_ON_DESC">
+	  		<option value="0">JOFF
+			</option>
+			<option value="1">JON
+			</option>
+     </field>
+	 <field
+      name="fb_border_color"
+      type="color"
+	  default=""
+      label="MOD_SIMPL_FB_BORDER_COLOR_LABEL"
+      description="MOD_SIMPL_FB_BORDER_COLOR_DESC">
+     </field>	
+	 <field
+      name="fb_border_rounded"
+      type="radio"
+	  class="btn-group"
+	  validate="options"
+	  default="0"
+      label="MOD_SIMPL_FB_BORDER_ROUNDED_LABEL"
+      description="MOD_SIMPL_FB_BORDER_ROUNDED_DESC">
+	  		<option value="0">JOFF
+			</option>
+			<option value="1">JON
+			</option>
+     </field> 
+	 <field
+      name="fb_border_rounded_px"
+      type="text"
+	  default=""
+      label="MOD_SIMPL_FB_BORDER_ROUNDED_PX_LABEL"
+      description="MOD_SIMPL_FB_BORDER_ROUNDED_PX_DESC">
+     </field>
+	 <field
+      name="fb_border_padding"
+      type="text"
+	  default=""
+      label="MOD_SIMPL_FB_BORDER_PADDING_LABEL"
+      description="MOD_SIMPL_FB_BORDER_PADDING_DESC">
+     </field>
+	 <field
+      name="fb_background_color"
+      type="color"
+	  default=""
+      label="MOD_SIMPL_FB_BACKGROUND_COLOR_LABEL"
+      description="MOD_SIMPL_FB_BACKGROUND_COLOR_DESC">
+     </field>
+    </fieldset>		 
+<fieldset
+		name="like_btn_opt"
+		label="LIKE_BTN_OPT_FIELDSET_LABEL">
+		<field
+      name="like_btn_layout"
+      type="list"
+	  validate="options"
+      default="MOD_SIMPL_FB_LAYOUT_STANDARD"
+      label="MOD_SIMPL_FB_LAYOUT_LABEL"
+      description="MOD_SIMPL_FB_LAYOUT_DESC">
+	   <option value="a.standard">MOD_SIMPL_FB_LAYOUT_STANDARD
+       </option>
+	   <option value="a.button_count">MOD_SIMPL_FB_LAYOUT_BUTTON_COUNT
+       </option>
+	   <option value="a.box_count">MOD_SIMPL_FB_LAYOUT_BOX_COUNT
+       </option>
+	   <option value="a.button">MOD_SIMPL_FB_LAYOUT_BUTTON
+       </option>
+     </field>
+		<field
+      name="verb"
+      type="list"
+	  validate="options"
+      default="MOD_SIMPL_FB_VERB_LIKE"
+      label="MOD_SIMPL_FB_VERB_LABEL"
+      description="MOD_SIMPL_FB_VERB_DESC">
+	  <option value="a.like">MOD_SIMPL_FB_VERB_LIKE
+       </option>
+	   <option value="a.recommend">MOD_SIMPL_FB_VERB_RECOMMEND
+       </option>
+     </field>
+	 <field
+      		name="fb_send"
+      		type="radio"
+			class="btn-group"
+			validate="options"
+			default="0"
+      		label="MOD_SIMPL_FB_SEND"
+      		description="MOD_SIMPL_FB_SEND_DESC">	  		
+			<option value="0">JOFF
+			</option>
+			<option value="1">JON
+			</option>
+     </field>
+	 <field
+      		name="fb_kid_directed_site"
+      		type="radio"
+			class="btn-group"
+			validate="options"
+			default="0"
+      		label="MOD_SIMPL_FB_KID_DIRECTED"
+      		description="MOD_SIMPL_FB_KID_DIRECTED_DESC">	  		
+			<option value="0">JOFF
+			</option>
+			<option value="1">JON
+			</option>
+     </field>	
+	 <field
+		  name="fb_ref"
+		  type="text"
+		  validate=""
+		  default=""
+		  label="MOD_SIMPL_FB_REF"
+		  description="MOD_SIMPL_FB_REF_DESC">
+     </field>	
+</fieldset>
+<fieldset
+		name="pages_opt"
+		label="PAGES_OPT_FIELDSET_LABEL">
+		<field
+		  name="fb_page_title"
+		  type="text"
+		  default=""
+		  label="MOD_SIMPL_FB_PAGES_TITLE"
+		  description="MOD_SIMPL_FB_PAGES_TITLE_DESC">
+		</field>
+		<field 
+			name="fb_show_streams"
+			type="radio"
+			class="btn-group"
+			validate="options"
+			default="0"
+			label="MOD_SIMPL_FB_SHOW_STREAM_LABEL"
+			description="MOD_SIMPL_FB_SHOW_STREAM_DESC">	  		
+			<option value="0">JOFF
+			</option>
+			<option value="1">JON
+			</option>
+		</field>
+		<field 
+			name="fb_small_header"
+			type="radio"
+			class="btn-group"
+			validate="options"
+			default="0"
+			label="MOD_SIMPL_FB_SMALL_HEADER"
+			description="MOD_SIMPL_FB_SMALL_HEADER_DESC">	  		
+			<option value="0">JOFF
+			</option>
+			<option value="1">JON
+			</option>
+		</field>
+		<field 
+		name="fb_show_header"
+		type="radio"
+		class="btn-group"
+		validate="options"
+		default="0"
+      	label="MOD_SIMPL_FB_SHOW_HEADER_LABEL"
+      	description="MOD_SIMPL_FB_SHOW_HEADER_DESC">	  		
+		<option value="0">JOFF
+		</option>
+		<option value="1">JON
+		</option>
+		</field>
+		<field 
+		name="fb_hide_cta"
+		type="radio"
+		class="btn-group"
+		validate="options"
+		default="0"
+      	label="MOD_SIMPL_FB_HIDE_CTA"
+      	description="MOD_SIMPL_FB_HIDE_CTA_DESC">	  		
+		<option value="0">JOFF
+		</option>
+		<option value="1">JON
+		</option>
+		</field>				
+</fieldset>
+<fieldset
+		name="comments_opt"
+		label="COMMENTS_OPT_FIELDSET_LABEL">
+		<field
+      name="num_pos"
+      type="text"
+	  validate=""
+      default="2"
+      label="MOD_SIMPL_FB_NUM_POS"
+      description="MOD_SIMPL_FB_NUM_POS_DESC">
+     </field>
+	 <field
+      name="fb_appid"
+      type="text"
+	  validate=""
+      default=""
+      label="MOD_SIMPL_FB_APPID"
+      description="MOD_SIMPL_FB_APPID_DESC">
+     </field>
+	 <field
+      name="fb_comments_order_by"
+      type="list"
+	  validate="options"
+      default="MOD_SIMPL_FB_SOCIAL"
+      label="MOD_SIMPL_FB_ORDER_BY"
+      description="MOD_SIMPL_FB_ORDER_BY_DESC">
+	   <option value="a.social">MOD_SIMPL_FB_SOCIAL
+       </option>
+	   <option value="a.time">MOD_SIMPL_FB_TIME
+       </option>
+	   <option value="a.reverse_time">MOD_SIMPL_FB_REVERSE_TIME
+       </option>
+     </field>
+</fieldset>
+<fieldset
+		name="follow_icn_opt"
+		label="FOLLOW_ICN_OPT_FIELDSET_LABEL">
+		<field
+      		name="fb_follow_icn"
+      		type="radio"
+			class="btn-group"			
+			validate="options"
+			default="a.ic_fb_22"
+      		label="MOD_SIMPL_FB_FOLLOW_ICN_SEL"
+      		description="MOD_SIMPL_FB_FOLLOW_ICN_DESC">	  		
+			<option value="a.ic_fb_29">MOD_SIMPL_FB_FOLLOW_F_29
+			</option>
+			<option value="a.ic_fb_50">MOD_SIMPL_FB_FOLLOW_F_50
+			</option>
+            <option value="a.ic_fb_72">MOD_SIMPL_FB_FOLLOW_F_72
+			</option>
+            <option value="a.ic_fb_w_29">MOD_SIMPL_FB_FOLLOW_F_WHITE_29
+			</option>
+			<option value="a.ic_fb_w_50">MOD_SIMPL_FB_FOLLOW_F_WHITE_50
+			</option>
+			<option value="a.ic_fb_w_72">MOD_SIMPL_FB_FOLLOW_F_WHITE_72
+			</option>
+			<option value="a.btn_fb_72">MOD_SIMPL_FB_FOLLOW_FIND_US_72
+			</option>
+			<option value="a.btn_fb_100">MOD_SIMPL_FB_FOLLOW_FIND_US_100
+			</option>
+			<option value="a.btn_fb_cust">MOD_SIMPL_FB_FOLLOW_BTN_FB_CUST</option>
+     </field>
+	 <field
+      name="cust_img"
+      type="media"
+	  directory="folio"
+	  hide_none="1"
+	  size="40"
+      label="MOD_SIMPL_FB_CUST_IMG_LABEL"
+      description="MOD_SIMPL_FB_CUST_IMG_DESC">
+     </field>
+</fieldset>
+<fieldset name="advanced">
+      
+	  <field
+      name="lang"
+      type="list"
+	  validate="options"
+      default="MOD_SIMPL_FB_LANG_EN_US"
+      label="MOD_SIMPL_FB_LANG_LABEL"
+      description="MOD_SIMPL_FB_LANG_DESC">
+	   <option value="a.af_ZA">MOD_SIMPL_FB_LANG_AF_ZA
+       </option>
+	   <option value="a.sq_AL">MOD_SIMPL_FB_LANG_SQ_AL
+       </option>
+	   <option value="a.ar_AR">MOD_SIMPL_FB_LANG_AR_AR
+       </option>
+	   <option value="a.hy_AM">MOD_SIMPL_FB_LANG_HY_AM
+       </option>
+	   <option value="a.ay_BO">MOD_SIMPL_FB_LANG_AY_BO
+       </option>
+	   <option value="a.az_AZ">MOD_SIMPL_FB_LANG_AZ_AZ
+       </option>
+	   <option value="a.eu_ES">MOD_SIMPL_FB_LANG_EU_ES
+       </option>
+	   <option value="a.be_BY">MOD_SIMPL_FB_LANG_BE_BY
+       </option>
+		<option value="a.bn_IN">MOD_SIMPL_FB_LANG_BN_IN
+			   </option>
+		<option value="a.bs_BA">MOD_SIMPL_FB_LANG_BS_BA
+			   </option>
+		<option value="a.bg_BG">MOD_SIMPL_FB_LANG_BG_BG
+			   </option>
+		<option value="a.ca_ES">MOD_SIMPL_FB_LANG_CA_ES
+			   </option>
+		<option value="a.ck_US">MOD_SIMPL_FB_LANG_CK_US
+			   </option>
+		<option value="a.hr_HR">MOD_SIMPL_FB_LANG_HR_HR
+			   </option>
+		<option value="a.cs_CZ">MOD_SIMPL_FB_LANG_CS_CZ
+			   </option>
+		<option value="a.da_DK">MOD_SIMPL_FB_LANG_DA_DK
+			   </option>
+		<option value="a.nl_NL">MOD_SIMPL_FB_LANG_NL_NL
+			   </option>
+		<option value="a.nl_BE">MOD_SIMPL_FB_LANG_NL_BE
+			   </option>	   
+	   <option value="a.en_PI">MOD_SIMPL_FB_LANG_EN_PI
+       </option>	   
+	   <option value="a.en_GB">MOD_SIMPL_FB_LANG_EN_GB
+       </option>
+	   <option value="a.en_UD">MOD_SIMPL_FB_LANG_EN_UD
+       </option>
+	   <option value="a.en_US">MOD_SIMPL_FB_LANG_EN_US
+       </option>
+	   <option value="a.fr_FR">MOD_SIMPL_FB_LANG_FR_FR
+       </option>
+	   <option value="a.de_DE">MOD_SIMPL_FB_LANG_DE_DE
+       </option>
+	   <option value="a.eo_EO">MOD_SIMPL_FB_LANG_EO_EO
+       </option>
+		<option value="a.et_EE">MOD_SIMPL_FB_LANG_ET_EE
+			   </option>
+		<option value="a.fo_FO">MOD_SIMPL_FB_LANG_FO_FO
+			   </option>
+		<option value="a.tl_PH">MOD_SIMPL_FB_LANG_TL_PH
+			   </option>
+		<option value="a.fi_FI">MOD_SIMPL_FB_LANG_FI_FI
+			   </option>
+		<!--<option value="a.fb_FI">MOD_SIMPL_FB_LANG_FB_FI
+			   </option>-->
+		<option value="a.fr_CA">MOD_SIMPL_FB_LANG_FR_CA
+			   </option>
+		<option value="a.fr_FR">MOD_SIMPL_FB_LANG_FR_FR
+			   </option>
+		<option value="a.gl_ES">MOD_SIMPL_FB_LANG_GL_ES
+			   </option>
+		<option value="a.ka_GE">MOD_SIMPL_FB_LANG_KA_GE
+			   </option>
+		<option value="a.de_DE">MOD_SIMPL_FB_LANG_DE_DE
+			   </option>
+		<option value="a.el_GR">MOD_SIMPL_FB_LANG_EL_GR
+			   </option>
+		<option value="a.gn_PY">MOD_SIMPL_FB_LANG_GN_PY
+			   </option>
+		<option value="a.gu_IN">MOD_SIMPL_FB_LANG_GU_IN
+			   </option>
+		<option value="a.he_IL">MOD_SIMPL_FB_LANG_HE_IL
+			   </option>
+		<option value="a.hi_IN">MOD_SIMPL_FB_LANG_HI_IN
+			   </option>
+		<option value="a.hu_HU">MOD_SIMPL_FB_LANG_HU_HU
+			   </option>
+		<option value="a.is_IS">MOD_SIMPL_FB_LANG_IS_IS
+			   </option>
+		<option value="a.id_ID">MOD_SIMPL_FB_LANG_ID_ID
+			   </option>
+		<option value="a.ga_IE">MOD_SIMPL_FB_LANG_GA_IE
+			   </option>
+		<option value="a.it_IT">MOD_SIMPL_FB_LANG_IT_IT
+			   </option>
+		<option value="a.ja_JP">MOD_SIMPL_FB_LANG_JA_JP
+			   </option>
+		<option value="a.jv_ID">MOD_SIMPL_FB_LANG_JV_ID
+			   </option>
+		<option value="a.kn_IN">MOD_SIMPL_FB_LANG_KN_IN
+			   </option>
+		<option value="a.kk_KZ">MOD_SIMPL_FB_LANG_KK_KZ
+			   </option>
+		<option value="a.km_KH">MOD_SIMPL_FB_LANG_KM_KH
+			   </option>
+		<!--<option value="a.tl_ST">MOD_SIMPL_FB_LANG_TL_ST
+			   </option>-->
+		<option value="a.ko_KR">MOD_SIMPL_FB_LANG_KO_KR
+			   </option>
+		<option value="a.ku_TR">MOD_SIMPL_FB_LANG_KU_TR
+			   </option>
+		<option value="a.la_VA">MOD_SIMPL_FB_LANG_LA_VA
+			   </option>
+		<option value="a.lv_LV">MOD_SIMPL_FB_LANG_LV_LV
+			   </option>
+		<option value="a.fb_LT">MOD_SIMPL_FB_LANG_FB_LT
+			   </option>
+		<option value="a.li_NL">MOD_SIMPL_FB_LANG_LI_NL
+			   </option>
+		<option value="a.lt_LT">MOD_SIMPL_FB_LANG_LT_LT
+			   </option>
+		<option value="a.mk_MK">MOD_SIMPL_FB_LANG_MK_MK
+			   </option>
+		<option value="a.mg_MG">MOD_SIMPL_FB_LANG_MG_MG
+			   </option>
+		<option value="a.ms_MY">MOD_SIMPL_FB_LANG_MS_MY
+			   </option>
+		<option value="a.ml_IN">MOD_SIMPL_FB_LANG_ML_IN
+			   </option>
+		<option value="a.mt_MT">MOD_SIMPL_FB_LANG_MT_MT
+			   </option>
+		<option value="a.mr_IN">MOD_SIMPL_FB_LANG_MR_IN
+			   </option>
+		<option value="a.mn_MN">MOD_SIMPL_FB_LANG_MN_MN
+			   </option>
+		<option value="a.ne_NP">MOD_SIMPL_FB_LANG_NE_NP
+			   </option>
+		<option value="a.se_NO">MOD_SIMPL_FB_LANG_SE_NO
+			   </option>
+		<option value="a.nb_NO">MOD_SIMPL_FB_LANG_NB_NO
+			   </option>
+		<option value="a.nn_NO">MOD_SIMPL_FB_LANG_NN_NO
+			   </option>
+		<option value="a.ps_AF">MOD_SIMPL_FB_LANG_PS_AF
+			   </option>
+		<option value="a.fa_IR">MOD_SIMPL_FB_LANG_FA_IR
+			   </option>
+		<option value="a.pl_PL">MOD_SIMPL_FB_LANG_PL_PL
+			   </option>
+		<option value="a.pt_BR">MOD_SIMPL_FB_LANG_PT_BR
+			   </option>
+		<option value="a.pt_PT">MOD_SIMPL_FB_LANG_PT_PT
+			   </option>
+		<option value="a.pa_IN">MOD_SIMPL_FB_LANG_PA_IN
+			   </option>
+		<option value="a.qu_PE">MOD_SIMPL_FB_LANG_QU_PE
+			   </option>
+		<option value="a.ro_RO">MOD_SIMPL_FB_LANG_RO_RO
+			   </option>
+		<option value="a.rm_CH">MOD_SIMPL_FB_LANG_RM_CH
+			   </option>
+		<option value="a.ru_RU">MOD_SIMPL_FB_LANG_RU_RU
+			   </option>
+		<option value="a.sa_IN">MOD_SIMPL_FB_LANG_SA_IN
+			   </option>
+		<option value="a.sr_RS">MOD_SIMPL_FB_LANG_SR_RS
+			   </option>
+		<option value="a.zh_CN">MOD_SIMPL_FB_LANG_ZH_CN
+			   </option>
+		<option value="a.sk_SK">MOD_SIMPL_FB_LANG_SK_SK
+			   </option>
+		<option value="a.sl_SI">MOD_SIMPL_FB_LANG_SL_SI
+			   </option>
+		<option value="a.so_SO">MOD_SIMPL_FB_LANG_SO_SO
+			   </option>
+		<option value="a.es_LA">MOD_SIMPL_FB_LANG_ES_LA
+			   </option>
+		<option value="a.es_CL">MOD_SIMPL_FB_LANG_ES_CL
+			   </option>
+		<option value="a.es_CO">MOD_SIMPL_FB_LANG_ES_CO
+			   </option>
+		<option value="a.es_MX">MOD_SIMPL_FB_LANG_ES_MX
+			   </option>
+		<option value="a.es_ES">MOD_SIMPL_FB_LANG_ES_ES
+			   </option>
+		<option value="a.es_VE">MOD_SIMPL_FB_LANG_ES_VE
+			   </option>
+		<option value="a.sw_KE">MOD_SIMPL_FB_LANG_SW_KE
+			   </option>
+		<option value="a.sv_SE">MOD_SIMPL_FB_LANG_SV_SE
+			   </option>
+		<option value="a.sy_SY">MOD_SIMPL_FB_LANG_SY_SY
+			   </option>
+		<option value="a.tg_TJ">MOD_SIMPL_FB_LANG_TG_TJ
+			   </option>
+		<option value="a.ta_IN">MOD_SIMPL_FB_LANG_TA_IN
+			   </option>
+		<option value="a.tt_RU">MOD_SIMPL_FB_LANG_TT_RU
+			   </option>
+		<option value="a.te_IN">MOD_SIMPL_FB_LANG_TE_IN
+			   </option>
+		<option value="a.th_TH">MOD_SIMPL_FB_LANG_TH_TH
+			   </option>
+		<option value="a.zh_HK">MOD_SIMPL_FB_LANG_ZH_HK
+			   </option>
+		<option value="a.zh_TW">MOD_SIMPL_FB_LANG_ZH_TW
+			   </option>
+		<option value="a.tr_TR">MOD_SIMPL_FB_LANG_TR_TR
+			   </option>
+		<option value="a.uk_UA">MOD_SIMPL_FB_LANG_UK_UA
+			   </option>
+		<option value="a.ur_PK">MOD_SIMPL_FB_LANG_UR_PK
+			   </option>
+		<option value="a.uz_UZ">MOD_SIMPL_FB_LANG_UZ_UZ
+			   </option>
+		<option value="a.vi_VN">MOD_SIMPL_FB_LANG_VI_VN
+			   </option>
+		<option value="a.cy_GB">MOD_SIMPL_FB_LANG_CY_GB
+			   </option>
+		<option value="a.xh_ZA">MOD_SIMPL_FB_LANG_XH_ZA
+			   </option>
+		<option value="a.yi_DE">MOD_SIMPL_FB_LANG_YI_DE
+			   </option>
+		<option value="a.zu_ZA">MOD_SIMPL_FB_LANG_ZU_ZA
+			   </option>
+     </field>
+	  
+	  <field
+        name="moduleclass_sfx"
+        type="text"
+        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+    </fieldset>
+  </fields>
+ </config>
+ <updateservers>
+	<server type="extension" priority="1" name="Simpl Facebook Module Updates">http://briancoale.com/joom/index.php?option=com_ars&amp;view=update&amp;task=stream&amp;format=xml&amp;id=1&amp;dummy=extension.xml</server>
+ </updateservers>
+</extension>

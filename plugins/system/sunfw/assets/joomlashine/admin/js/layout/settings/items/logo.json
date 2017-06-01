@@ -1,0 +1,103 @@
+{
+	"class": "logo",
+	"rows": [
+		{
+			"class": "separator-after",
+			"cols": [
+				{
+					"class": "col-xs-12",
+					"controls": {
+						"name": {
+							"type": "text",
+							"hint":"layout-logo-name-hint",
+							"label": "name"
+						}
+					}
+				}
+			]
+		},
+		{
+			"cols": [
+				{
+					"class": "col-sm-12",
+					"controls": {
+						"logo": {
+							"type": "choose-image",
+							"hint":"layout-logo-hint",
+							"label": "logo"
+						}
+					}
+				},
+				{
+					"class": "col-sm-12",
+					"controls": {
+						"mobile-logo": {
+							"type": "choose-image",
+							"hint":"layout-mobile-logo-hint",
+							"label": "mobile-logo"
+						}
+					}
+				},
+				{
+					"class": "col-sm-12",
+					"controls": {
+						"alt": {
+							"type": "text",
+							"hint":"layout-logo-alt-text-hint",
+							"label": "logo-alt-text"
+						}
+					}
+				},
+				{
+					"class": "col-sm-12",
+					"controls": {
+						"link": {
+							"type": "text",
+							"hint":"layout-logo-link-hint",
+							"label": "logo-link",
+							"placeholder": "http://"
+						}
+					}
+				}
+			]
+		},
+		{
+			"class": "separator-before",
+			"cols": [
+				{
+					"class": "col-xs-12 display-in-layout",
+					"controls": {
+						"visible_in": {
+							"type": "checkbox",
+							"hint":"layout-logo-display-in-layout-hint",
+							"check-none": false,
+							"label": "display-in-layout",
+							"options": [
+								{ "value": "lg", "label": "desktop" },
+								{ "value": "md", "label": "latop" },
+								{ "value": "sm", "label": "tablet" },
+								{ "value": "xs", "label": "smartphone" }
+							],
+							"default": [ "lg", "md", "sm", "xs" ]
+						}
+					}
+				}
+			]
+		},
+		{
+			"class": "separator-before",
+			"cols": [
+				{
+					"class": "col-xs-12",
+					"controls": {
+						"class": {
+							"type": "text",
+							"hint":"layout-logo-custom-classes-hint",
+							"label": "custom-classes"
+						}
+					}
+				}
+			]
+		}
+	]
+}

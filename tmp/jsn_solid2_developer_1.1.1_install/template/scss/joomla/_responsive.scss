@@ -1,0 +1,145 @@
+// ======================================
+// -------- Disable Responsive ----------
+// ======================================
+
+.disable-responsive {
+	.container {
+		width: $container-lg !important;
+	}
+}
+
+// ======================================
+// ------------- Small grid -------------
+// ======================================
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+	.row {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.demo-events .demo-events-img img {
+	    width: 100px;
+	}
+	.welcome .media-left img { width: 200px;}
+	.module-title .box-title {
+		font-size: 14px;
+	}
+	.footer .module-title {
+		font-size: 14px;
+	}
+	.item-page .jsn-bootstrap3 h3, .item-page .jsn-bootstrap3 .h3 {
+		font-size: 14px;
+	}
+	.main-menu ul.sunfw-tpl-menu > li > a {
+		padding: 6px 15px;
+	}
+}
+
+// ======================================
+// ------------- Medium grid ------------
+// ======================================
+
+@media (min-width: $screen-md-min) {
+	.container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+
+// ======================================
+// ------------- Large grid -------------
+// ======================================
+
+@media (min-width: $screen-lg-min ) {
+
+}
+
+// responsive max-width: 767px;
+@media (max-width: 767px) {
+	.sunfw-logo {
+		text-align: center;
+		a {
+			display: inline-block;
+		}
+	}
+	#sunfw_section_menu > div > div > div {
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+	.block-menu {
+		position: absolute;
+		top: 0;
+		padding: 0;
+		@include rtl-right(0);
+	}
+	.blog {
+		.article-info dd:last-child {
+			float: none;
+		}
+		.entry-content {
+			padding: 15px;
+		}
+	}
+	.item-page {
+		padding-top: 20px;
+	}
+	.item-page .page-header h2 {
+		font-size: 35px;
+	}
+	.layout-item .blog [class*='col-xs-'] {
+		width: 100%;
+	}
+	.bottom, .bottom .align-right {
+		text-align: center;
+	}
+	.welcome .media-left {
+		display: block;
+		text-align: center;
+		padding: 0;
+		img {
+			display: inline-block;
+		}
+	}
+	#sunfw_section_footer {
+		.col-xs-12 {
+			@include rtl-padding-left(15px);
+			@include rtl-padding-right(15px);
+		}
+	}
+}
+@media (max-width: 480px) {
+	.row {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.blog {
+		.items-row [class*="col-xs-4"] {
+			width: 100%;
+		}
+	}
+	.layout-item .slider-home {
+		padding: 30px 0;
+		h1 {
+			font-size: 24px;
+			margin-bottom: 15px;
+		}
+		.btn {
+			margin-top: 20px;
+		}
+	}
+	.main-menu ul.sunfw-tpl-menu.navbar-nav {
+		max-height: 400px;
+		overflow: scroll;
+	}
+	#p2v_g {
+		@include rtl-border-right(none !important);
+	}
+	.jsn-error-page .jsn-search #mod-search-searchword {
+		width: 100% !important;
+		margin-bottom: 10px;
+	}
+	.jsn-error-page .table .table-cell {
+		display: block !important;
+	}
+}

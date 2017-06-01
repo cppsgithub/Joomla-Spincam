@@ -1,0 +1,369 @@
+.jsn-main-content .jsn-navigation-header label {
+    margin-bottom: 0;
+}
+.jsn-main-content .jsn-navigation-header .item-setting .title-label {
+    min-width: 200px;
+}
+.jsn-main-content .jsn-navigation-header .effects .title-label {
+    min-width: 150px;
+}
+.jsn-main-content .jsn-navigation-header .effects .item-setting .form-control {
+    display: inline-block;
+    max-width: 150px;
+}
+.jsn-main-content .jsn-navigation-header .general .item-setting {
+    padding-bottom: 20px;
+}
+.jsn-main-content .jsn-navigation-header .effects .item-setting {
+    padding-bottom: 10px;
+}
+.jsn-main-content .jsn-navigation-header .effects .item-setting .radio-inline input {
+    margin-top: 2px;
+}
+.jsn-main-content .jsn-navigation-header .mega-menu {
+    padding-top: 25px;
+}
+.jsn-main-content .jsn-navigation-header .mega-menu .title-label {
+    min-width: 150px;
+    font-weight: bold;
+}
+.jsn-main-content .jsn-navigation-header .mega-menu .item-setting {
+    padding-bottom: 10px;
+    margin-left: 5px;
+}
+.jsn-main-content .jsn-navigation-header .mega-menu hr {
+    border-top: 1px solid #ccc;
+    margin: 20px 0 25px;
+}
+.jsn-main-content .jsn-menu-content > .list-menu {
+    background: #e2e2e2;
+    padding: 15px 0;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #E0E0E0;
+}
+.jsn-main-content .jsn-menu-content ul.nav li:first-child {
+    margin-left: 0;
+}
+.jsn-main-content .jsn-menu-content ul.nav li {
+    margin: 0 5px;
+    position: relative;
+}
+.jsn-main-content .jsn-menu-content ul.nav li a {
+    background: #FFF;
+    color: #4e5666;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 25px;
+    border: 1px solid #CCC;
+}
+.jsn-main-content .jsn-menu-content ul.nav li a:after {
+    content: "\f013";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    display: none;
+}
+.jsn-main-content .jsn-menu-content ul.nav li:hover a,
+.jsn-main-content .jsn-menu-content ul.nav li.active a {
+    background: #e2e2e2;
+    border-color: #999;
+}
+.jsn-main-content .jsn-menu-content ul.nav li:hover a:after,
+.jsn-main-content .jsn-menu-content ul.nav li.active a:after {
+    display: block;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu {
+    margin-top: 20px;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu label {
+    margin-bottom: 0;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .title-label {
+    display: inline-block;
+    margin-right: 10px;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .item-setting {
+    display: inline-block;
+    padding-right: 30px;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .item-setting:last-child {
+    padding-right: 0;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .megamenu-alignment {
+    display: inline-block;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .megamenu-alignment a {
+    color: #333333;
+    font-size: 14px;
+    padding: 0 5px;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .megamenu-alignment a.active,
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .submenu-align label.active {
+    color: #ff9c00;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .submenu-align label {
+    color: #333333;
+    font-size: 14px;
+    padding: 0 2px;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu label {
+    font-weight: normal;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu input.form-control {
+    max-width: 130px;
+    display: inline-block;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .submenu-w input.form-control {
+    padding: 6px 15px;
+    max-width: 70px;
+    text-align: right;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .submenu-w .form-group span {
+    padding-left: 5px;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .submenu-align label:first-child {
+    padding-left: 10px;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .form-group {
+    margin: 0;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .content-cf {
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .form-group label {
+    margin-right: 10px;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu select.form-control {
+    display: inline-block;
+    max-width: 150px;
+    width: auto;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .ic-font-cf {
+    position: relative;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .ic-font-cf button {
+    position: absolute;
+    right: 0;
+    padding: 5px 10px;
+    top:0;
+}
+.jsn-main-content .jsn-menu-content .nav-config-megamenu .desc-cf input {
+    max-width: 150px;
+}
+.jsn-main-content .megamenu-content-cf .jsn-content-main {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 15px;
+    background: #EFEFE3;
+    border: 1px solid #DDDFBA;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.jsn-main-content .megamenu-content-cf {
+    margin-top: 30px;
+}
+.jsn-main-content .megamenu-content-cf .sub-menu ul {
+    float: none;
+}
+.jsn-main-content .megamenu-content-cf .sub-menu ul.nav li {
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.jsn-main-content .megamenu-content-cf .sub-menu ul.nav li:last-child {
+    padding-bottom: 0;
+}
+.jsn-main-content .megamenu-content-cf .sub-menu ul.nav li a{
+    background: #E2E2E2;
+    border: 1px solid #ccc;
+    color: #4e5666;
+}
+.jsn-main-content .megamenu-content-cf .sub-menu ul li.nav a:hover {
+    color: #928379;
+}
+.jsn-main-content .megamenu-content-cf .col-left {
+    width: 213px;
+    border: 1px solid #e4e6c3;
+}
+.jsn-main-content .megamenu-content-cf .jsn-panel .jsn-item:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+.jsn-main-content .megamenu-content-cf .jsn-panel .jsn-item ul {
+    margin: 0;
+    text-align: right;
+}
+.jsn-navigation-header legend {
+    margin-left: 20px;
+    float: none;
+    display: block;
+    width: auto;
+}
+.jsn-main-content .jsn-navigation-header .effects select {
+    max-width: 150px;
+}
+.jsn-main-content .jsn-navigation-header .mega-menu .item-setting select {
+    max-width: 210px;
+}
+.jsn-main-content .jsn-navigation-header .mega-menu .item-setting select {
+    max-width: 210px;
+    width: 100%;
+    display: inline-block;
+}
+.jsn-main-content .jsn-navigation-header .mega-menu .item-setting select option {
+    padding: 0 12px;
+}
+.nav-config-megamenu .row.content-cf {
+    margin: 0;
+}
+.nav-config-megamenu .row.content-cf .item-setting .switch,
+.jsn-navigation-header .effects .display-inline .switch,
+.switch {
+    width: auto;
+    height: auto;
+}
+.nav-config-megamenu .row.content-cf .slider.round,
+.jsn-navigation-header .effects .display-inline .switch .slider.round,
+.switch .slider.round {
+    float: right;
+    height: 10px;
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
+    width: 25px;
+}
+.jsn-main-content .jsn-navigation-header label.switch:last-child {
+    padding-left: 15px;
+}
+.jsn-navigation-header .general .sunfw-options:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+.jsn-navigation-header .general .sunfw-options > .display-inline,
+.jsn-navigation-header .options .sunfw-options > .display-inline {
+    display: block;
+    clear: both;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.jsn-navigation-header .general .sunfw-options > .display-inline > div {
+    display: block;
+    float: left;
+}
+.jsn-navigation-header .general .sunfw-options select {
+    width: 120px;
+    float: left;
+}
+.jsn-navigation-header .general .sunfw-options > .display-inline .display-inline {
+    line-height: 33px;
+}
+.jsn-navigation-header .general .sunfw-options > .display-inline .display-inline label {
+    font-weight: normal;
+}
+.jsn-navigation-header .general .sunfw-options > .display-inline .display-inline:first-child,
+.jsn-navigation-header .options .sunfw-options > .display-inline .display-inline:first-child {
+    min-width: 150px;
+    font-weight: bold;
+}
+.jsn-navigation-header .general .sunfw-options > .display-inline .padding-top-10.display-inline {
+    padding-top: 0 !important;
+}
+.jsn-navigation-header .general .sunfw-options > .display-inline .switch .slider.round {
+    top: 10px;
+}
+.jsn-navigation-header .options .sunfw-options:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+.jsn-navigation-header .options .sunfw-options > .display-inline {
+    margin-bottom: 11px;
+}
+.jsn-navigation-header .options .sunfw-options > .display-inline > div {
+    display: block;
+    float: left;
+}
+.jsn-navigation-header .options .sunfw-options select {
+    width: 120px;
+    float: left;
+}
+.jsn-navigation-header .options .sunfw-options > .display-inline .display-inline {
+    line-height: 33px;
+}
+.jsn-navigation-header .options .sunfw-options > .display-inline .padding-top-10.display-inline {
+    padding-top: 0 !important;
+}
+.jsn-navigation-header .options .sunfw-options > .display-inline .switch .slider.round {
+    top: 0;
+}
+.nav-config-megamenu #root_settings_icon {
+    position: relative;
+}
+.nav-config-megamenu #root_settings_icon .pick-icon.width-75 {
+    width: 70px !important;
+}
+.nav-config-megamenu #root_settings_icon .pick-icon.width-75 i.fa {
+    padding-right: 3px;
+}
+.nav-config-megamenu #root_settings_icon .pick-icon.width-75 .list-inline > li {
+    padding: 0 2px;
+}
+.nav-config-megamenu #root_settings_desc {
+    max-width: 150px;
+}
+.megamenu-content-cf .row-layout .row-drag {
+    left: 0;
+    top: 20px;
+}
+
+/* Workspace */
+.mega-menu-workspace {
+    min-height: 400px;
+}
+
+/* Section animation */
+@keyframes row-animation {
+    from { width: 0; height: 0; opacity: 0; }
+    to { width: 100%; height: 100%; opacity: 1; }
+}
+.mega-menu-item.row-layout {
+    overflow: hidden;
+}
+.mega-menu-workspace > .mega-menu-item.row-layout {
+    overflow: visible;
+}
+
+/* Item animation */
+@keyframes item-animation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Disabled item */
+.mega-menu-item.disabled-item {
+    opacity: .25;
+}
+.mega-menu-item.disabled-item .mega-menu-item.disabled-item {
+    opacity: initial;
+}
+
+/* Inline editable */
+.edit-text {
+    cursor: text;
+}
+
+/* Active label */
+.form-group label.active {
+    color: #ff9c00;
+}
+
+.megamenu-content-cf .mega-menu-item .jsn-panel-heading .manipulation-actions {
+    display: none;
+}

@@ -1,0 +1,285 @@
+/**
+ * @version    $Id$
+ * @package    SUN Framework
+ * @author     JoomlaShine Team <support@joomlashine.com>
+ * @copyright  Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.
+ * @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Websites: http://www.joomlashine.com
+ * Technical Support:  Feedback - http://www.joomlashine.com/contact-us/get-support.html
+ */
+
+/* Common */
+.jsn-panel:last-child {
+	margin-bottom: 0;
+}
+
+.background-color-white {
+	background-color: white !important;
+}
+
+.style-settings {
+	width: 325px;
+}
+.style-editor .workspace-container {
+	width: calc(100% - 325px);
+}
+
+/* Workspace */
+.jsn-content-main.main-workspace .no-section-found {
+	display: flex;
+	height: inherit;
+	align-items: center;
+	justify-content: center;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	opacity: .25;
+}
+.style-editor-item {
+	border: 2px solid transparent;
+	margin-bottom: 15px;
+}
+.style-editor-item.mouseover {
+	border: 2px dotted orange;
+}
+.style-editor-item.editing {
+	border: 2px solid orange;
+}
+.form-group > label:empty {
+	display: none;
+}
+
+/* Highlight */
+.sunfw-style-group .active {
+	cursor: text;
+}
+.preview-page-settings,
+.preview-page-inner-settings,
+.preview-section-settings,
+.preview-module-settings {
+	border: 2px solid transparent;
+	overflow: hidden;
+}
+.preview-page-settings.mouseover,
+.preview-page-inner-settings.mouseover,
+.preview-section-settings.mouseover {
+	outline: none;
+	border: 2px dotted orange;
+}
+.preview-page-settings > .jsn-panel-body {
+	-webkit-box-shadow: 0 1px 3px 0 #E4E6C3;
+	box-shadow: 0 1px 3px 0 #E4E6C3;
+}
+
+/* Style preset */
+.preview-style {
+	border: 1px solid #E4E6C3;
+	border-radius: 3px;
+	padding: 1px;
+	width: 200px;
+}
+.preview-style [class^="col-xs-"] {
+	padding: 1px;
+}
+.preview-style [class^="col-xs-"] .preview-column {
+	min-width: 100%;
+	min-height: 10px;
+}
+.preview-style .bg-style {
+	padding: 0 10px 10px;
+}
+#load_style_modal .empty-prestyle {
+	text-align: center;
+	align-items: center;
+    justify-content: center;
+	font-size: 2em;
+    font-weight: bold;
+    color: #544A43;
+    display: flex;
+    min-height: 250px;
+    opacity: .25;
+}
+#load_style_modal .modal-body {
+	padding-bottom: 0;
+}
+.preview-style .bg-style .preview-column {
+	min-width: 0;
+	width: 45px;
+}
+.preview-style .bg-style .primary-btn-color .preview-column {
+	margin-left: 15px;
+}
+
+/* Outer page */
+.preview-page-settings.jsn-panel{
+	padding: 0;
+}
+.preview-page-settings .outer {
+	padding: 0;
+	background: url(../../images/transparent.png);
+}
+.preview-page-settings .outer .preview-primary-button-settings {
+	margin-bottom: 20px;
+}
+.preview-page-settings .outer .inner .preview-primary-button-settings {
+	margin-bottom: 0;
+}
+
+/* Inner page */
+.preview-page-inner-settings {
+	margin-bottom: 0;
+	padding: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.preview-page-inner-settings .inner {
+	padding: 20px 15px 10px;
+	background: url(../../images/transparent.png);
+}
+.preview-page-inner-settings h1 {
+	margin-top: 0;
+}
+
+/* General element */
+.preview-heading-settings h1 {
+	font-size: 32px;
+	margin-top: 0;
+}
+.preview-heading-settings h2 {
+	font-size: 26px;
+}
+.preview-heading-settings h3 {
+	font-size: 21px;
+}
+.preview-heading-settings h4 {
+	font-size: 15px;
+}
+.preview-heading-settings h5 {
+	font-size: 12px;
+}
+.preview-heading-settings h6 {
+	font-size: 11px;
+}
+
+/* General color */
+.jsn-panel.preview-page-settings {
+	overflow: visible;
+}
+.jsn-panel.preview-page-settings .outer {
+	padding: 20px;
+	margin: 0;
+}
+.jsn-panel.preview-page-settings .preview-default-button-settings,
+.jsn-panel.preview-page-settings .preview-primary-button-settings {
+	margin-bottom: 0;
+}
+.preview-color-settings h4 {
+	margin-top: 0;
+}
+.preview-color-settings .mainColor,
+.preview-color-settings .subColor {
+	display: inline-block;
+}
+.preview-color-settings .mainColor > span,
+.preview-color-settings .subColor > span {
+	width: 150px;
+	height: 30px;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 8px;
+}
+.preview-color-settings .mainColor > span,
+.preview-color-settings .subColor > span {
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.preview-color-settings .subColor {
+	margin-left: 15px;
+}
+.style-editor-item.preview-link-settings {
+	margin-bottom: 0;
+}
+
+/* Section */
+.preview-section-settings:last-child,
+.style-editor .jsn-content-main > div .jsn-panel.preview-section-settings:last-child {
+	margin-bottom: 0;
+}
+.style-editor .jsn-content-main > div .jsn-panel:last-child {
+	margin-bottom: 15px;
+}
+.preview-section-settings .content-section {
+	padding: 0 20px;
+	background: url(../../images/transparent.png);
+}
+div.jsn-panel.preview-section-settings .jsn-panel-heading {
+	margin: 0 -15px;
+}
+div.jsn-panel.preview-section-settings .preview-heading-settings h1 {
+	margin-top: 0;
+}
+div.jsn-panel.preview-section-settings .style-editor-item.preview-heading-settings {
+	margin-top: 20px;
+}
+.preview-section-settings .preview-default-button-settings,
+.preview-section-settings .preview-primary-button-settings {
+	margin-bottom: 20px;
+}
+
+/* Module */
+.jsn-content-main .col-xs-6:nth-child(odd) .preview-module-settings {
+	margin-right: -7px;
+}
+.jsn-content-main .col-xs-6:nth-child(even) .preview-module-settings {
+	margin-left: -7px;
+}
+.preview-module-settings {
+	padding: 0;
+	overflow: hidden;
+}
+.preview-module-settings .content-module {
+	padding: 20px;
+	margin: 0;
+	background: url(../../images/transparent.png) repeat;
+}
+.preview-module-settings .content-module h3 {
+	margin: -2px 0 0;
+	padding: 15px 0;
+}
+.preview-module-settings .content-module p {
+	margin: 0;
+}
+.preview-module-settings .content-module .preview-default-button-settings,
+.preview-module-settings .content-module .preview-primary-button-settings,
+.preview-module-settings .content-module .preview-primary-button-settings {
+	margin-bottom: 0;
+}
+div.preview-module-settings.jsn-panel .jsn-panel-heading {
+	padding: 0;
+}
+
+/* Menu */
+.jsn-panel .jsn-panel-body > .menu-with-dropdown {
+	padding: 10px 5px;
+}
+.menu-with-dropdown .show-menu .dropdown-menu {
+	display: block;
+}
+.preview-menu-settings,
+.preview-dropdown-menu-settings {
+	background: url(../../images/transparent.png) repeat;
+}
+.preview-menu-settings ul.display-inline.list-inline {
+	margin: 0;
+}
+.preview-menu-settings .list-inline > li {
+	padding: 0;
+}
+.preview-menu-settings .list-inline > li a {
+	padding: 8px 15px;
+	display: block;
+}
+.menu-without-dropdown .preview-menu-settings {
+	margin-bottom: 0;
+}

@@ -1,0 +1,61 @@
+// Please do not touch file
+
+@import "mixins/mixins";
+
+@mixin menu-root(
+	$font-size: false,
+    $text-transform: false,
+    $background: false,
+    $link-color: false,
+    $background-hover: false,
+    $link-hover-color: false
+){
+	@if $background != false {
+		background-color: $background;
+	}
+	ul.navbar-nav > li {
+		> a	{
+			@if $font-size != false { font-size: $font-size + 'px'; }
+			@if $link-color != false {	color: $link-color;	}
+			@if $text-transform != false {	text-transform: $text-transform;	}
+		}
+		&:hover > a,&.active > a{
+			@if $link-hover-color != false { color: $link-hover-color; }
+			@if $background-hover != false { background-color: $background-hover;}
+		}
+	}
+}
+
+@mixin menu-dropdown(
+	$font-size:  				false,
+    $text-transform:			false,
+    $background:  				false,
+    $link-color:  				false,
+    $background-hover:  		false,
+    $link-hover-color: 			false,
+    $width-dropdown:			false
+){
+	ul.dropdown-menu,ul.sunfw-megamenu-sub-menu, .modulecontainer ul.nav-child {
+		@if $background != false { background-color: $background;}
+		li a {
+			@if $font-size != false { font-size: $font-size + 'px'; }
+			@if $link-color != false {	color: $link-color;	}
+			@if $text-transform != false {	text-transform: $text-transform; }
+			&:hover, &:focus, &.current {
+				@if $background-hover != false { background-color: $background-hover;}
+				@if $link-hover-color != false { color: $link-hover-color; }
+			}
+		}
+		li.active > a{
+			@if $background-hover != false { background-color: $background-hover;}				
+			@if $link-hover-color != false { color: $link-hover-color; }			
+		}
+	}
+	ul.sunfw-megamenu-sub-menu li.current > a{
+		@if $background-hover != false { background-color: $background-hover;}				
+		@if $link-hover-color != false { color: $link-hover-color; }	
+	}	
+	ul.dropdown-menu, ul.sunfw-megamenu-sub-menu ul {
+		@if $width-dropdown != false { width: $width-dropdown + 'px';}
+	}
+}

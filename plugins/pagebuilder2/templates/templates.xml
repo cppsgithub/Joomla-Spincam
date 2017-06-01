@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="pagebuilder2" method="upgrade">
+	<name>plg_pagebuilder2_templates</name>
+	<version>1.1.6</version>	
+	<creationDate>04/10/2017</creationDate>
+	<author>JoomlaShine.com</author>
+	<authorEmail>admin@joomlashine.com</authorEmail>
+	<authorUrl>www.joomlashine.com</authorUrl>
+	<copyright>Copyright (C) 2013 JoomlaShine.com. All Rights Reserved.</copyright>
+	<license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description>PLG_PAGEBUILDER2_TEMPLATES_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="templates">templates.php</filename>
+		<filename>index.html</filename>
+		<filename>templates.xml</filename>
+		<folder>language</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_pagebuilder2_templates.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_pagebuilder2_templates.sys.ini</language>
+
+		<language tag="de-DE">language/de-DE/de-DE.plg_pagebuilder2_templates.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.plg_pagebuilder2_templates.sys.ini</language>
+
+		<language tag="it-IT">language/it-IT/it-IT.plg_pagebuilder2_templates.ini</language>
+		<language tag="it-IT">language/it-IT/it-IT.plg_pagebuilder2_templates.sys.ini</language>
+	</languages>
+</extension>

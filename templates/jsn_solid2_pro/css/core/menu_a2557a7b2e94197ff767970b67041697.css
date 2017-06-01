@@ -1,0 +1,33 @@
+#menu_item_menu {
+  background-color: #fff;
+}
+#menu_item_menu ul.navbar-nav > li > a {
+  font-size: 15px;
+  color: #4d4d4d;
+}
+#menu_item_menu ul.navbar-nav > li:hover > a, #menu_item_menu ul.navbar-nav > li.active > a {
+  color: #8e44ad;
+  background-color: #fff;
+}
+#menu_item_menu ul.dropdown-menu, #menu_item_menu ul.sunfw-megamenu-sub-menu, #menu_item_menu .modulecontainer ul.nav-child {
+  background-color: #fff;
+}
+#menu_item_menu ul.dropdown-menu li a, #menu_item_menu ul.sunfw-megamenu-sub-menu li a, #menu_item_menu .modulecontainer ul.nav-child li a {
+  font-size: 13px;
+  color: #4d4d4d;
+}
+#menu_item_menu ul.dropdown-menu li a:hover, #menu_item_menu ul.sunfw-megamenu-sub-menu li a:hover, #menu_item_menu .modulecontainer ul.nav-child li a:hover, #menu_item_menu ul.dropdown-menu li a:focus, #menu_item_menu ul.sunfw-megamenu-sub-menu li a:focus, #menu_item_menu .modulecontainer ul.nav-child li a:focus, #menu_item_menu ul.dropdown-menu li a.current, #menu_item_menu ul.sunfw-megamenu-sub-menu li a.current, #menu_item_menu .modulecontainer ul.nav-child li a.current {
+  background-color: #fff;
+  color: #8e44ad;
+}
+#menu_item_menu ul.dropdown-menu li.active > a, #menu_item_menu ul.sunfw-megamenu-sub-menu li.active > a, #menu_item_menu .modulecontainer ul.nav-child li.active > a {
+  background-color: #fff;
+  color: #8e44ad;
+}
+#menu_item_menu ul.sunfw-megamenu-sub-menu li.current > a {
+  background-color: #fff;
+  color: #8e44ad;
+}
+#menu_item_menu ul.dropdown-menu, #menu_item_menu ul.sunfw-megamenu-sub-menu ul {
+  width: 250px;
+}

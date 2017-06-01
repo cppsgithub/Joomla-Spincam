@@ -1,0 +1,33 @@
+#menu_item_menu {
+  background-color: custom;
+}
+#menu_item_menu ul.navbar-nav > li > a {
+  font-size: 15px;
+  color: #000;
+  text-transform: none;
+}
+#menu_item_menu ul.navbar-nav > li:hover > a, #menu_item_menu ul.navbar-nav > li.active > a {
+  color: #005580;
+}
+#menu_item_menu ul.dropdown-menu, #menu_item_menu ul.sunfw-megamenu-sub-menu, #menu_item_menu .modulecontainer ul.nav-child {
+  background-color: custom;
+}
+#menu_item_menu ul.dropdown-menu li a, #menu_item_menu ul.sunfw-megamenu-sub-menu li a, #menu_item_menu .modulecontainer ul.nav-child li a {
+  font-size: 13px;
+  color: #000;
+}
+#menu_item_menu ul.dropdown-menu li a:hover, #menu_item_menu ul.sunfw-megamenu-sub-menu li a:hover, #menu_item_menu .modulecontainer ul.nav-child li a:hover, #menu_item_menu ul.dropdown-menu li a:focus, #menu_item_menu ul.sunfw-megamenu-sub-menu li a:focus, #menu_item_menu .modulecontainer ul.nav-child li a:focus, #menu_item_menu ul.dropdown-menu li a.current, #menu_item_menu ul.sunfw-megamenu-sub-menu li a.current, #menu_item_menu .modulecontainer ul.nav-child li a.current {
+  background-color: #005580;
+  color: #fff;
+}
+#menu_item_menu ul.dropdown-menu li.active > a, #menu_item_menu ul.sunfw-megamenu-sub-menu li.active > a, #menu_item_menu .modulecontainer ul.nav-child li.active > a {
+  background-color: #005580;
+  color: #fff;
+}
+#menu_item_menu ul.sunfw-megamenu-sub-menu li.current > a {
+  background-color: #005580;
+  color: #fff;
+}
+#menu_item_menu ul.dropdown-menu, #menu_item_menu ul.sunfw-megamenu-sub-menu ul {
+  width: 200px;
+}

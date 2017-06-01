@@ -1,0 +1,127 @@
+{
+  "appliedLayout": "",
+  "settings": {
+    "enable_responsive": 1
+  },
+  "sections": {
+    "0": {
+      "id": "section_section-0",
+      "settings": {
+        "name": "Section #0"
+      },
+      "rows": [
+        0
+      ]
+    },
+    "1": {
+      "id": "section_section-1",
+      "settings": {
+        "name": "Section #1"
+      },
+      "rows": [
+        1
+      ]
+    }
+  },
+  "rows": {
+    "0": {
+      "id": "row_row-0",
+      "settings": {
+        "name": "Row #0"
+      },
+      "columns": [
+        0
+      ]
+    },
+    "1": {
+      "id": "row_row-1",
+      "settings": {
+        "name": "Row #1"
+      },
+      "columns": [
+        1
+      ]
+    }
+  },
+  "columns": {
+    "0": {
+      "id": "column_column-0",
+      "width": {
+        "lg": 12
+      },
+      "settings": {
+        "name": "Column #0"
+      },
+      "items": [
+        0
+      ]
+    },
+    "1": {
+      "id": "column_column-1",
+      "width": {
+        "lg": 12
+      },
+      "settings": {
+        "name": "Column #1"
+      },
+      "items": [
+        1
+      ]
+    }
+  },
+  "items": {
+    "0": {
+      "id": "item_menu",
+      "type": "menu",
+      "settings": {
+        "name": "Menu",
+        "identification_code": "item_1071355154589",
+        "menu-type": "mainmenu",
+        "menu-item": "",
+        "menu-start-level": "1",
+        "menu-end-level": "0",
+        "menu-show-icon": 1,
+        "menu-show-description": 1,
+        "menu-show-submenu": 0,
+        "menu-sub-effect": "1",
+        "menu-mobile-target": 1,
+        "visible_in": [
+          "lg",
+          "md",
+          "sm",
+          "xs"
+        ],
+        "class": ""
+      }
+    },
+    "1": {
+      "id": "item_main-body",
+      "type": "page-content",
+      "settings": {
+        "name": "Main Body"
+      }
+    }
+  },
+  "views": {
+    "main": {
+      "sections": [
+        0,
+        1
+      ]
+    },
+    "top": {
+      "rows": []
+    },
+    "right": {
+      "rows": []
+    },
+    "bottom": {
+      "rows": []
+    },
+    "left": {
+      "rows": []
+    }
+  },
+  "screen": "lg",
+  "editing": "item_1"
+}

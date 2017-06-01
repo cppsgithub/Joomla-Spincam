@@ -1,0 +1,74 @@
+#kunena.layout .navbar .navbar-inner ul li{
+	margin: 0;
+}
+#kunena .navbar .nav > li > a{
+	transition: color 0.3s linear 0s, background 0.3s ease-out 0s;
+	box-shadow: none;
+	text-shadow: none;
+}
+#kunena.layout .kfrontend{
+	float: left;
+	padding: 0;
+	width: 100%;
+}
+#kunena.layout .search .btn{
+    border: 1px solid #ddd;
+    border-radius: 4px 4px 4px 4px;	
+    padding: 6px 12px 6px 12px;
+}
+#kunena.layout .btn-toolbar .btn.b3,#kunena.layout #search .btn.b3{
+	padding: 0 5px;
+}
+#kunena.layout .btn-toolbar .btn.b3:before, #kunena.layout #search .btn.b3:before{
+	font-size: 10px !important;
+}
+#kunena.layout .breadcrumb{
+	margin: 20px 0;
+}
+#userdropdownlogin a.thumbnail span.icon-user{
+	width: auto;
+}
+#userdropdownlogin form.form-signin input.form-control{
+	margin: 5px 0;
+}
+#userdropdownlogin form.form-signin button[type="submit"]{
+	margin: 5px 0 !important;
+}
+/*#kunena.layout .nav .open > a, #kunena.layout .nav .open > a:hover, #kunena.layout .nav .open > a:focus, #kunena.layout .nav > li > a:hover, #kunena.layout .nav > li > a:focus{
+	color: #fff;
+	background: #d6aa74;
+}*/
+#kunena.layout .nav > li:hover > a.dropdown-toggle:not(#klogin), #kunena.layout .nav > li:focus > a.dropdown-toggle:not(#klogin){
+	background: none !important;
+}
+#kunena.layout i[class*=" icon-"]{
+	width: auto;
+}
+#kunena.layout .fa-big, #kunena.layout .icon-big{
+	margin: 10px 5px auto;
+}
+#kunena [class*="icon-"]{
+	background: none; 
+}
+#kunena .input-append .btn{
+	padding: 4px 12px;
+}
+#kunena a.hasTooltip{
+	display: inline-block !important;
+}
+#kunena .btn[name='kcheckgo']{
+	border: 1px solid #ccc;
+	height: 36px;
+}
+#kunena .btn-default{
+	font-size: 14px;
+}
+#kunena .btn-primary{
+	font-size: 14px;
+}
+#kunena .btn-toolbar > div > .btn-group{
+	margin-right: 10px;
+}
+#kunena.layout .center{
+	left: auto;
+}

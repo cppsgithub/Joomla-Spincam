@@ -1,0 +1,83 @@
+/**
+ * @version    $Id$
+ * @package    SUN Framework
+ * @author     JoomlaShine Team <support@joomlashine.com>
+ * @copyright  Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.
+ * @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Websites: http://www.joomlashine.com
+ * Technical Support:  Feedback - http://www.joomlashine.com/contact-us/get-support.html
+ */
+
+.modal-body .modal-footer {
+	margin-top: 15px;
+}
+
+#sample_data li {
+	padding: 5px 0;
+}
+#install_sample_data_modal li.extension:last-child {
+	padding-bottom: 0;
+}
+#install_sample_data_modal li.extension span {
+	margin-left: 10px;
+}
+#uninstall_sample_data_modal .success-message h3,
+#install_sample_data_modal .success-message h3 {
+	color: #5cb85c;
+}
+#sample_data .success-message > div {
+	background: #f2dede;
+	padding: 10px 15px 0;
+}
+#sample_data .success-message > div h4 {
+	color: #a94442;
+}
+#sample_data .success-message > div .alert {
+	padding-top: 0;
+	padding-left: 0;
+}
+#sample_data .success-message > div .alert ul li a.btn {
+	margin-left: 10px
+}
+#sample_data .success-message > div ul {
+	padding-top: 5px;
+	list-style: square;
+	margin-left: 20px;    
+}
+#sample_data .success-message > div ul li {
+	padding: 3px 0;
+}
+#uninstall_sample_data_modal .alert > label {
+	padding-bottom: 10px;
+}
+#uninstall_sample_data_modal .actions .btn:last-child {
+	margin-left: 5px;
+}
+#uninstall_sample_data_modal .modal-footer .checkbox {
+	display: inline-block;
+	float: left;
+	margin: 0;
+}
+#uninstall_sample_data_modal ul li span.fa,
+#install_sample_data_modal ul li span.fa {
+	margin-left: 5px;
+}
+#install_sample_data_modal p.extension-desc {
+	margin-top: 5px;
+}
+#sample_data p.extension-desc a {
+	padding-left: 5px;
+}
+
+/* Progress bar */
+#install_sample_data_modal .progress {
+	display: inline-block;
+	margin-bottom: 0 !important;
+	width: 100px;
+	height: 8px;
+	vertical-align: middle;
+}
+#install_sample_data_modal .progress .percentage {
+	display: none;
+}

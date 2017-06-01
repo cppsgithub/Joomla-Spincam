@@ -1,0 +1,61 @@
+/* ============================ */
+.main-menu ul.sunfw-tpl-menu > li.active::before, .main-menu ul.sunfw-tpl-menu > li:hover::before {
+  background: #005580;
+}
+.main-menu ul.sunfw-tpl-menu > li.megamenu ul.sunfw-megamenu-sub-menu .modulecontainer h3 {
+  border-left-color: #005580;
+}
+.link-action {
+  color: #005580 !important;
+}
+.welcome h3 {
+  color: #005580 !important;
+}
+.module-title .box-title span:first-letter {
+  color: #005580;
+}
+.module-title .box-title.title-special {
+  background: #005580;
+  border-left: 3px solid #00334d;
+  border-bottom-color: #005580 !important;
+}
+.footer .module-title:first-letter {
+  color: #005580;
+}
+.demo-events .demo-events-desc h3 a {
+  color: #005580;
+}
+.item-student a {
+  color: #005580;
+}
+.menu.menu-treemenu li.active > a {
+  color: #005580;
+}
+.sunfw-scrollup {
+  background: #005580;
+}
+.page-header h2 {
+  color: #005580 !important;
+}
+.menu-topmenu ul li {
+  border-bottom: 2px solid #005580;
+}
+.menu-topmenu ul li:hover {
+  background: #005580;
+  border: 1px solid #005580;
+}
+.main-menu .navbar-default .navbar-toggle {
+  background: #005580;
+  border-color: #005580;
+}
+.btn-border {
+  border-bottom-color: #005580 !important;
+}
+.pagination > .active > a {
+  background-color: #005580;
+  border-color: #005580;
+}
+.kfrontend .btn-link, .pagination > li > a, .pagination > li > span {
+  color: #005580;
+}
+/* ============================ Sub Color ============================ */

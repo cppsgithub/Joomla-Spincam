@@ -1,0 +1,40 @@
+/* ============================ */
+.main-menu ul.sunfw-tpl-menu > li.active::before, .main-menu ul.sunfw-tpl-menu > li:hover::before {
+  background: #76990c;
+}
+.main-menu ul.sunfw-tpl-menu > li.megamenu ul.sunfw-megamenu-sub-menu .modulecontainer h3 {
+  border-left-color: #76990c;
+}
+.link-action {
+  color: #76990c !important;
+}
+.welcome h3 {
+  color: #76990c !important;
+}
+.module-title .box-title span:first-letter {
+  color: #76990c;
+}
+.module-title .box-title.title-special {
+  background: #76990c;
+  border-left: 3px solid #526a08;
+  border-bottom-color: #76990c !important;
+}
+.footer .module-title:first-letter {
+  color: #76990c;
+}
+.demo-events .demo-events-desc h3 a {
+  color: #76990c;
+}
+.item-student a {
+  color: #76990c;
+}
+.menu.menu-treemenu li.active > a {
+  color: #76990c;
+}
+.sunfw-scrollup {
+  background: #76990c;
+}
+.page-header h2 {
+  color: #76990c !important;
+}
+/* ============================ Sub Color ============================ */

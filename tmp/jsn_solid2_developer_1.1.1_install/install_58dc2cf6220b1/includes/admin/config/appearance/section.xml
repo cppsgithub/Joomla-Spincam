@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="sunfw-appearance">
+		<fieldset name="container" label="SUNFW_APPEARANCE_CONTAINER">
+			<field name="section-container-border" class="form-control" type="sunfwborder" default="" label="SUNFW_APPEARANCE_BORDER" />
+			<field name="section-container-background" class="form-control" type="sunfwbackground" prefixName="section-container-background" fieldName="sunfw-appearance" label="SUNFW_APPEARANCE_BACKGROUND" />
+		</fieldset>
+
+		<fieldset name="heading" label="SUNFW_APPEARANCE_HEADING">
+
+			<field name="section-heading-inherit" class="form-control" parentFieldName="sunfw-appearance" inheritFields="section-heading-headings-color, section-heading-headings-base-size, section-heading-headings-letter-spacing, section-heading-headings-line-height, section-heading-headings-text-transform" type="sunfwinherit" default="yes" label="SUNFW_APPEARANCE_INHERIT" />
+			<field name="section-heading-headings-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" default="" data-color-type="hex" label="SUNFW_APPEARANCE_HEADINGS_COLOR" />
+			<field name="section-heading-headings-base-size" suffix="px" max-range="96" min-range="6" class="form-control sunfwslider" type="sunfwslider" default="24" label="SUNFW_APPEARANCE_HEADINGS_FONT_BASE_SIZE" />
+			<field name="section-heading-headings-letter-spacing" suffix="px" max-range="25" min-range="0" class="form-control sunfwslider" type="sunfwslider" default="0" label="SUNFW_APPEARANCE_HEADINGS_LETTER_SPACING" />
+			<field name="section-heading-headings-line-height" suffix="em" max-range="5" min-range="0" class="form-control sunfwslider" type="sunfwslider" default="1.4" step="0.01" label="SUNFW_APPEARANCE_HEADINGS_LINE_HEIGHT" />
+			<field name="section-heading-headings-text-transform" type="list" default="none" class="form-control" label="SUNFW_APPEARANCE_TEXT_TRANSFORM" description="">
+				<option value="none">SUNFW_APPEARANCE_TEXT_TRANSANFORM_NONE</option>
+				<option value="capitalize">SUNFW_APPEARANCE_TEXT_TRANSANFORM_CAPITALIZE</option>
+				<option value="uppercase">SUNFW_APPEARANCE_TEXT_TRANSANFORM_UPPERCASE</option>
+				<option value="lowercase">SUNFW_APPEARANCE_TEXT_TRANSANFORM_LOWERCASE</option>
+			</field>
+			<field name="section-heading-headings-text-shadow" class="form-control" type="sunfwtextshadow" label="SUNFW_APPEARANCE_TEXT_SHADOW"/>
+		</fieldset>
+
+		<fieldset name="content" label="SUNFW_APPEARANCE_CONTENT">
+
+			<field name="section-content-inherit" class="form-control" parentFieldName="sunfw-appearance" inheritFields="section-content-color, section-content-font-weight, section-content-font-size-base, section-content-letter-spacing, section-content-line-height" default="yes" type="sunfwinherit" label="SUNFW_APPEARANCE_INHERIT" />
+			
+			<field name="section-content-font-size-base" suffix="px" max-range="96" min-range="6" class="form-control sunfwslider" type="sunfwslider" default="12" label="SUNFW_APPEARANCE_CONTENT_FONT_SIZE" />
+			
+			<field name="section-content-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" label="SUNFW_APPEARANCE_COLOR" />
+			
+			<field name="section-content-font-weight" type="list" default="normal" class="form-control" label="SUNFW_APPEARANCE_HEADINGS_FONT_WEIGHT" description="">
+				<option value="normal">SUNFW_APPEARANCE_FONT_WEIGHT_NORMAL</option>
+				<option value="bold">SUNFW_APPEARANCE_FONT_WEIGHT_BOLD</option>
+			</field>
+					
+			<field name="section-content-letter-spacing" suffix="px" max-range="25" min-range="0" class="form-control sunfwslider" type="sunfwslider" default="0" label="SUNFW_APPEARANCE_LETTER_SPACING" />
+			
+			<field name="section-content-line-height" suffix="em" max-range="5" min-range="0" class="form-control sunfwslider" type="sunfwslider" default="1.4" step="0.01" label="SUNFW_APPEARANCE_LINE_HEIGHT" />
+			
+			<field name="section-content-text-shadow" class="form-control" type="sunfwtextshadow" default="" label="SUNFW_APPEARANCE_TEXT_SHADOW"/>
+		</fieldset>
+
+		<fieldset name="link" label="SUNFW_APPEARANCE_LINK">
+			<field name="section-link-inherit" class="form-control" parentFieldName="sunfw-appearance" inheritFields="section-link-link-color, section-link-link-color-hover" default="yes" type="sunfwinherit" label="SUNFW_APPEARANCE_INHERIT" />	
+			<field name="section-link-link-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" default="" label="SUNFW_APPEARANCE_LINK_COLOR" />
+			<field name="section-link-link-color-hover" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" default="" label="SUNFW_APPEARANCE_LINK_COLOR_HOVER"/>
+		</fieldset>
+		<fieldset name="button" label="SUNFW_APPEARANCE_BUTTON">
+			<field name="section-button-btn-inherit" class="form-control" parentFieldName="sunfw-appearance" inheritFields="section-button-btn-default-bg,section-button-btn-default-bg-hover,section-button-btn-default-border,section-button-btn-default-radius,section-button-btn-default-font-style,section-button-btn-default-font-weight,section-button-btn-default-font-size,section-button-btn-default-letter-spacing,section-button-btn-default-color,section-button-btn-default-color-hover,section-button-btn-default-text-transform,section-button-btn-primary-bg,section-button-btn-primary-bg-hover,section-button-btn-primary-color,section-button-btn-primary-color-hover" default="yes" type="sunfwinherit" label="SUNFW_APPEARANCE_INHERIT" />
+			<field type="spacer" class="h4 margin-bottom-20 clearfix" label="SUNFW_APPEARANCE_BUTTON_DEFAULT" />
+			<field name="section-button-btn-default-padding" class="form-control" default="" type="sunfwpadding" label="SUNFW_APPEARANCE_PADDING"/>
+			<field name="section-button-btn-default-bg" class="form-control sunfwcolorpicker" default="" data-color-type="rgb" type="sunfwcolorpicker" label="SUNFW_APPEARANCE_BUTTON_BG" />
+			<field name="section-button-btn-default-bg-hover" class="form-control sunfwcolorpicker" default="" data-color-type="rgb" type="sunfwcolorpicker" label="SUNFW_APPEARANCE_BUTTON_BG_HOVER" />
+			<field name="section-button-btn-default-border" class="form-control" type="sunfwborder" default="" label="SUNFW_APPEARANCE_BUTTON_BORDER"/>
+			<field name="section-button-btn-default-radius" class="form-control" type="sunfwborderradius" default="" label="SUNFW_APPEARANCE_BUTTON_RADIUS"/>
+			<field name="section-button-btn-default-font-style" type="list" default="normal" class="form-control" label="SUNFW_APPEARANCE_BUTTON_FONT_STYLE" description="">
+				<option value="normal">SUNFW_APPEARANCE_FONT_STYLE_NORMAL</option>
+				<option value="italic">SUNFW_APPEARANCE_FONT_STYLE_ITALIC</option>
+				<option value="oblique">SUNFW_APPEARANCE_FONT_STYLE_OBLIQUE</option>
+			</field>
+			<field name="section-button-btn-default-font-weight" type="list" default="normal" class="form-control" label="SUNFW_APPEARANCE_BUTTON_FONT_WEIGHT" description="">
+				<option value="normal">SUNFW_APPEARANCE_FONT_WEIGHT_NORMAL</option>
+				<option value="bold">SUNFW_APPEARANCE_FONT_WEIGHT_BOLD</option>
+			</field>
+			<field name="section-button-btn-default-font-size" suffix="px" max-range="96" min-range="6" class="form-control sunfwslider" type="sunfwslider" default="" label="SUNFW_APPEARANCE_BUTTON_FONT_SIZE"/>
+			<field name="section-button-btn-default-letter-spacing" suffix="px" max-range="25" min-range="0" class="form-control sunfwslider" type="sunfwslider" default="0" label="SUNFW_APPEARANCE_LETTER_SPACING"/>
+			<field name="section-button-btn-default-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" default="" label="SUNFW_APPEARANCE_BUTTON_TEXT_COLOR"/>
+			<field name="section-button-btn-default-color-hover" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" default="" label="SUNFW_APPEARANCE_BUTTON_TEXT_COLOR_HOVER"/>			
+			<field name="section-button-btn-default-text-transform" type="list" default="none" class="form-control" label="SUNFW_APPEARANCE_TEXT_TRANSFORM" description="">
+				<option value="none">SUNFW_APPEARANCE_TEXT_TRANSANFORM_NONE</option>
+				<option value="capitalize">SUNFW_APPEARANCE_TEXT_TRANSANFORM_CAPITALIZE</option>
+				<option value="uppercase">SUNFW_APPEARANCE_TEXT_TRANSANFORM_UPPERCASE</option>
+				<option value="lowercase">SUNFW_APPEARANCE_TEXT_TRANSANFORM_LOWERCASE</option>
+			</field>	
+			<field name="section-button-btn-default-text-shadow" class="form-control" type="sunfwtextshadow" default="" label="SUNFW_APPEARANCE_TEXT_SHADOW"/>					
+			<field name="section-button-btn-default-box-shadow" class="form-control" type="sunfwboxshadow" default="" label="SUNFW_APPEARANCE_BOX_SHADOW"/>
+			
+			<field type="spacer" class="h4 margin-bottom-20 margin-top-20 clearfix" label="SUNFW_APPEARANCE_BUTTON_PRIMARY" />
+			<field name="section-button-btn-primary-bg" class="form-control sunfwcolorpicker" default="" data-color-type="rgb" type="sunfwcolorpicker" label="SUNFW_APPEARANCE_BUTTON_BG" />
+			<field name="section-button-btn-primary-bg-hover" class="form-control sunfwcolorpicker" default="" data-color-type="rgb" type="sunfwcolorpicker" label="SUNFW_APPEARANCE_BUTTON_BG_HOVER" />
+			<field name="section-button-btn-primary-border" class="form-control" type="sunfwborder" default="" label="SUNFW_APPEARANCE_BUTTON_BORDER"/>
+			<field name="section-button-btn-primary-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" default="" label="SUNFW_APPEARANCE_BUTTON_TEXT_COLOR"/>
+			<field name="section-button-btn-primary-color-hover" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" default="" label="SUNFW_APPEARANCE_BUTTON_TEXT_COLOR_HOVER"/>					
+			<field name="section-button-btn-primary-text-shadow" class="form-control" type="sunfwtextshadow" default="" label="SUNFW_APPEARANCE_TEXT_SHADOW"/>
+			<field name="section-button-btn-primary-box-shadow" class="form-control" type="sunfwboxshadow" default="" label="SUNFW_APPEARANCE_BOX_SHADOW"/>
+		</fieldset>
+	</fields>
+	
+</form>

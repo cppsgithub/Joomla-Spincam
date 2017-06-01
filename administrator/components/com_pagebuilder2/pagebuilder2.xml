@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>PageBuilder2</name>
+	<identified_name>ext_pagebuilder2</identified_name>
+    <version>1.1.6</version>
+    <creationDate>04/10/2017</creationDate>
+    <author>JoomlaShine.com</author>
+    <authorEmail>support@joomlashine.com</authorEmail>
+    <authorUrl>http://www.joomlashine.com</authorUrl>
+    <copyright>Copyright (C) 2013 JoomlaShine.com. All Rights Reserved.</copyright>
+    <license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <description>JSN PageBuilder2 Component</description>
+	<edition>FREE</edition>
+    <updateservers>
+        <server type="collection" name="pagebuilder2">http://www.joomlashine.com/versioning/extensions/com_pagebuilder2.xml</server>
+    </updateservers> 	
+    <install>
+        <sql>
+            <file charset="utf8" driver="mysql">database/mysql/install.mysql.sql</file>
+        </sql>
+    </install>
+    <scriptfile>subinstall.php</scriptfile>
+    <subinstall>
+        <extension type="plugin" folder="system" name="jsnframework" identified_name="ext_framework" client="site" publish="1" lock="1">
+            JSN Extension Framework System Plugin
+        </extension>
+        <extension type="plugin" folder="system" name="pagebuilder2" dir="plugins/system/pagebuilder2" client="site" publish="1" lock="1">
+            JSN PageBuilder2 System Plugin
+        </extension>
+        <extension type="plugin" folder="content" name="pb2loadmodule" dir="plugins/content/pb2loadmodule" client="site" publish="1" lock="1">
+            JSN PageBuilder2 Load Module Plugin
+        </extension>
+        <extension type="plugin" folder="editors" name="pagebuilder2" dir="plugins/editors/pagebuilder2" client="site" publish="1" lock="1">
+            JSN PageBuilder2 Editor Plugin
+        </extension>
+        <extension type="plugin" folder="pagebuilder2" name="elements" dir="plugins/pagebuilder2/elements" client="site" publish="1" lock="1">
+            JSN PageBuilder2 Elements Plugin
+        </extension>
+        <extension type="plugin" folder="pagebuilder2" name="templates" dir="plugins/pagebuilder2/templates" client="site" publish="1" lock="1">
+            JSN PageBuilder2 Templates Plugin
+        </extension>
+    </subinstall>
+    <uninstall>
+        <sql>
+            <file charset="utf8" driver="mysql">database/mysql/uninstall.mysql.sql</file>
+        </sql>
+    </uninstall>
+    <administration>
+        <menu link="option=com_pagebuilder2" option="com_pagebuilder2"
+              img="components/com_pagebuilder2/assets/images/icon-pagebuilder2.png" alt="JSN_SAPMLE_MENU_TEXT">
+            JSN_PAGEBUILDER2_MENU_TEXT
+        </menu>
+        <submenu>
+            <!-- menu link="option=com_pagebuilder2&amp;view=items" view="items" img="components/com_pagebuilder2/assets/images/icons-16/icon-items.png" alt="JSN_PAGEBUILDER2_MENU_ITEMS_TEXT">JSN_PAGEBUILDER2_MENU_ITEMS_TEXT</menu -->
+            <menu link="option=com_pagebuilder2&amp;view=configuration" view="configuration"
+                  img="components/com_pagebuilder2/assets/images/icons-16/icon-configuration.png"
+                  alt="JSN_PAGEBUILDER2_MENU_CONFIGURARTION_TEXT">JSN_PAGEBUILDER2_MENU_CONFIGURARTION_TEXT
+            </menu>
+            <menu link="option=com_pagebuilder2&amp;view=about" view="about"
+                  img="components/com_pagebuilder2/assets/images/icons-16/icon-about.png"
+                  alt="JSN_PAGEBUILDER2_MENU_ABOUT_TEXT">JSN_PAGEBUILDER2_MENU_ABOUT_TEXT
+            </menu>
+        </submenu>
+        <files folder="admin">
+            <folder>assets</folder>
+            <folder>controllers</folder>
+            <folder>database</folder>
+            <folder>helpers</folder>
+            <folder>language</folder>
+            <folder>libraries</folder>
+            <folder>models</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <filename>access.xml</filename>
+            <filename>bootstrap.php</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>dependency.php</filename>
+            <filename>jsninstaller.php</filename>
+            <filename>pagebuilder2.php</filename>
+            <filename>pagebuilder2.defines.php</filename>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/admin/en-GB/en-GB.com_pagebuilder2.ini</language>
+            <language tag="en-GB">language/admin/en-GB/en-GB.com_pagebuilder2.sys.ini</language>
+
+            <language tag="it-IT">language/admin/it-IT/it-IT.com_pagebuilder2.ini</language>
+            <language tag="it-IT">language/admin/it-IT/it-IT.com_pagebuilder2.sys.ini</language>
+
+            <language tag="de-DE">language/admin/de-DE/de-DE.com_pagebuilder2.ini</language>
+            <language tag="de-DE">language/admin/de-DE/de-DE.com_pagebuilder2.sys.ini</language>
+        </languages>
+    </administration>
+</extension>

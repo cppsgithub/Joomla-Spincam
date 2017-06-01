@@ -1,0 +1,31 @@
+/**
+ * @version    $Id$
+ * @package    SUN Framework
+ * @author     JoomlaShine Team <support@joomlashine.com>
+ * @copyright  Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.
+ * @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Websites: http://www.joomlashine.com
+ * Technical Support:  Feedback - http://www.joomlashine.com/contact-us/get-support.html
+ */
+
+/* Common */
+.cookie-law-settings {
+	width: 325px;
+}
+.cookie-law .workspace-container {
+	width: calc(100% - 325px);
+}
+
+/* Not enabled */
+.cookie-law-not-enabled {
+	display: flex;
+	height: calc(100%);
+	align-items: center;
+	justify-content: center;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	background-color: #EFEFE3;
+	opacity: .25;
+}

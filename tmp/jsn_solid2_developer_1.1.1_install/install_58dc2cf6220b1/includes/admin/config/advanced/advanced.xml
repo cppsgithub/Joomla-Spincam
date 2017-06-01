@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="sunfw-advanced">
+		<fieldset name="sunfw-advanced-settings" parent="" columns="3" label="">
+			<fieldset name="sunfw-advanced-favicon" parent="sunfw-advanced-settings" column="left" label="SUNFW_ADVANCED_ICONS">
+				<field name="sunfwfavicon" class="form-control" type="sunfwfavicon" label="SUNFW_ADVANCED_FAVICON" description="SUNFW_ADVANCED_FAVICON_DESC" />
+			</fieldset>
+			<fieldset name="sunfw-advanced-assets-compression" parent="sunfw-advanced-settings" column="left" label="SUNFW_ADVANCED_ASSETS_COMPRESSION">
+				<field name="niche-style" default="" class="form-control" type="text" label="" description="" />
+				<field name="compression" class="" type="checkboxes" label="SUNFW_ADVANCED_COMPRESSION_TARGET" description="SUNFW_ADVANCED_COMPRESSION_TARGET_DESC">
+				    <option value="css">SUNFW_ADVANCED_COMPRESS_CSS</option>
+				    <option value="js">SUNFW_ADVANCED_COMPRESS_JS</option>
+				</field>
+				<field name="maxCompressionSize" type="sunfwtextaddon" dataType="number" default="100" suffix="KB" class="form-control" label="SUNFW_ADVANCED_COMPRESSION_MAX_SIZE" description="SUNFW_ADVANCED_COMPRESSION_MAX_SIZE_DESC" />
+				<field name="cacheDirectory" type="sunfwfolder" default="cache/" class="form-control" label="SUNFW_ADVANCED_CACHE_DIRECTORY" description="SUNFW_ADVANCED_CACHE_DIRECTORY_DESC" />
+				<field name="compressionExclude" type="textarea" rows="5" class="form-control" label="SUNFW_ADVANCED_EXLUCDE_FROM_COMPRESSION" description="SUNFW_ADVANCED_EXLUCDE_FROM_COMPRESSION_DESC" />
+			</fieldset>
+			<fieldset name="sunfw-advanced-custom-code" parent="sunfw-advanced-settings" column="center" label="SUNFW_ADVANCED_CUSTOM_CODE">
+				<field name="customBeforeEndingHeadTag" type="textarea" rows="5" class="form-control" label="SUNFW_ADVANCED_CUSTOM_BEFORE_ENDING_HEAD_TAG" description="SUNFW_ADVANCED_CUSTOM_BEFORE_ENDING_HEAD_TAG_DESC" />
+				<field name="customBeforeEndingBodyTag" type="textarea" rows="5" class="form-control" label="SUNFW_ADVANCED_CUSTOM_BEFORE_ENDING_BODY_TAG" description="SUNFW_ADVANCED_CUSTOM_BEFORE_ENDING_BODY_TAG_DESC" />			
+			</fieldset>
+			<fieldset name="sunfw-custom-files" parent="sunfw-advanced-settings" column="right" label="SUNFW_ADVANCED_CUSTOM_FILES">
+				<field name="customCSSFiles" type="textarea" rows="5" class="form-control" label="SUNFW_ADVANCED_CUSTOM_FIELS_CSS" description="SUNFW_ADVANCED_CUSTOM_FIELS_CSS_DESC" />
+				<field name="customJSFiles" type="textarea" rows="5" class="form-control" label="SUNFW_ADVANCED_CUSTOM_FIELS_JS" description="SUNFW_ADVANCED_CUSTOM_FIELS_JS_DESC" />			
+			</fieldset>					
+		</fieldset>			
+	</fields>
+</form>

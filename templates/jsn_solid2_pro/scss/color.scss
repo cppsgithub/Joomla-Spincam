@@ -1,0 +1,81 @@
+/* ============================ */
+$main-color: false !default;
+@if($main-color != false) {
+  .main-menu ul.sunfw-tpl-menu > li.active::before, .main-menu ul.sunfw-tpl-menu > li:hover::before {
+      background: $main-color;
+  }
+  .main-menu ul.sunfw-tpl-menu > li.megamenu ul.sunfw-megamenu-sub-menu .modulecontainer h3 {
+    border-left-color: $main-color;
+  }
+  .link-action {
+    color: $main-color !important;
+  }
+  .welcome h3 {
+    color: $main-color !important;
+  }
+  .module-title {
+    .box-title {
+        span {
+            &:first-letter {
+                color: $main-color;
+            }
+        }
+        &.title-special {
+            background: $main-color;
+            border-left: 3px solid darken($main-color,10%);
+            border-bottom-color: $main-color !important;
+        }
+    }
+  }
+  .footer {
+    .module-title {
+      &:first-letter {
+          color: $main-color;
+      }
+    }
+  }
+  .demo-events .demo-events-desc h3 a {
+    color: $main-color;
+  }
+  .item-student a {
+    color: $main-color;
+  }
+  .menu.menu-treemenu li.active > a {
+    color: $main-color;
+  }
+  .sunfw-scrollup {
+    background: $main-color;
+  }
+  .page-header h2 {
+    color: $main-color !important;
+  }
+	.menu-topmenu ul li {
+		border-bottom: 2px solid $main-color;
+	}
+	.menu-topmenu ul li:hover {
+		background: $main-color;
+		border: 1px solid $main-color;
+	}
+	.main-menu .navbar-default .navbar-toggle {
+		background: $main-color;
+		border-color: $main-color;
+	}
+	.btn-border {
+		border-bottom-color: $main-color !important;
+	}
+	.pagination > .active > a {
+		background-color: $main-color;
+		border-color: $main-color;
+	}
+	.kfrontend .btn-link,
+	.pagination > li > a,
+	.pagination > li > span {
+		color: $main-color;
+	}
+}
+
+/* ============================ Sub Color ============================ */
+$sub-color: false !default;
+@if($sub-color != false){
+
+}

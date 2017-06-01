@@ -1,0 +1,21 @@
+#sunfw_section_header {
+  background-color: #fff;
+}
+#sunfw_section_menu {
+  background-color: #fff;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #d5d5d5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ddd;
+}
+#sunfw_section_copyright {
+  background-color: #fff;
+}
+#sunfw_section_footer {
+  background-color: #f6f6f6;
+}
+#sunfw_section_content-bottom {
+  background-color: #f6f6f6;
+}

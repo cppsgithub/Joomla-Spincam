@@ -1,0 +1,86 @@
+/**
+ * @version    $Id$
+ * @package    JSN_PageBuilder2
+ * @author     JoomlaShine Team <support@joomlashine.com>
+ * @copyright  Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.
+ * @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Websites: http://www.joomlashine.com
+ * Technical Support:  Feedback - http://www.joomlashine.com/contact-us/get-support.html
+ */
+
+.jsn-pb2-loading {
+	display: inline-block;
+	margin-left: 6px;
+	width: 16px;
+	height: 16px;
+	background: url(../../../../administrator/components/com_pagebuilder2/assets/images/icons-16/icon-16-loading-circle.gif) 50% 50% no-repeat;
+	vertical-align: middle;
+}
+#toolbar {
+	position: fixed;
+}
+
+#toolbar .jsn-drop-menu .navbar .nav li {
+	float: none;
+	margin: 0;
+	padding: 0;
+	height: auto;
+}
+
+#toolbar .jsn-drop-menu .dropdown-menu:before {
+	content: '';
+	display: inline-block;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid #ccc;
+	border-bottom-color: rgba(0,0,0,0.2);
+	position: absolute;
+	top: -7px;
+	left: 8px;
+}
+#toolbar .jsn-drop-menu .dropdown-menu {
+	overflow: visible !important;
+}
+#toolbar .jsn-drop-menu .nav > .dropdown.open:after {
+	content: '';
+	display: inline-block;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid #fff;
+	position: absolute;
+	top: 34px;
+	left: 10px;
+	box-shadow: 0;
+	z-index: 1001;
+	margin-top: -8px;
+}
+#toolbar .jsn-drop-menu .navbar-inner {
+	min-height: 10px;
+	padding: 0;
+	background-color: transparent;
+	background-image: none;
+	border: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	filter: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+#jsn-menu-item-jsn-pb2-editor-switcher {
+	vertical-align: top;
+}
+#jsn-pb2-editor-switcher {
+	margin-top: 0;
+	margin-bottom: 0 !important;
+}
+#jsn-pb2-editor-switcher + .dropdown-menu {
+	top: auto !important;
+	margin-top: 6px;
+}
+#jsn-pb2-editor-switcher + .dropdown-menu li:not(:last-child) {
+	border-bottom: 1px solid #f3f3f3;
+}
